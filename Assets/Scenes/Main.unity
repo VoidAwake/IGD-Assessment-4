@@ -436,7 +436,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 146e3554ee5f0954b9e473427632b3d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -479,7 +479,7 @@ Transform:
   - {fileID: 879631917}
   - {fileID: 2120206159}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1543942456
 PrefabInstance:
@@ -494,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7469135223110958009, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7469135223110958009, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,6 +536,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7469135223110958010, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1808482190}
+    - target: {fileID: 7469135223110958010, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: highscoreText
+      value: 
+      objectReference: {fileID: 1872966624}
     - target: {fileID: 9035670101320790749, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
       propertyPath: m_Distance
       value: 0.5
@@ -684,7 +692,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: dfa948dae7075de469c5c62da86b1781, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -784,7 +792,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2969516657780434638, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2969516657780434638, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
       propertyPath: m_LocalPosition.x
