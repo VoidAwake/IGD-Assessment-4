@@ -112,3 +112,20 @@ Received Import Request.
 Start importing Assets/Scripts using Guid(39700ed2b3e8d2c4f81a06b2dd489b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317d4ee5d7594ed94ff60b49a252f67f') in 0.009543 seconds
   Import took 0.012495 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 710.755901 seconds.
+  path: Assets/Background + Foreground/Background.png
+  artifactKey: Guid(dfa948dae7075de469c5c62da86b1781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background + Foreground/Background.png using Guid(dfa948dae7075de469c5c62da86b1781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9b19e9a4b1fb740a108dc031fde597') in 0.023266 seconds
+  Import took 0.028181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Background + Foreground/Foreground.png
+  artifactKey: Guid(146e3554ee5f0954b9e473427632b3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background + Foreground/Foreground.png using Guid(146e3554ee5f0954b9e473427632b3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7237ec147c737e139c8cb60c22687934') in 0.024577 seconds
+  Import took 0.027832 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
