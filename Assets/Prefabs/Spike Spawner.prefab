@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spikePrefab: {fileID: 2276583698020884474, guid: db58846d496e03c498520a405182329a, type: 3}
-  spikesPerSecond: 1
+  spikesPerSecond: 2
   minSpawn: -10
   maxSpawn: 10

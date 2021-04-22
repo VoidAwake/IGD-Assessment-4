@@ -460,10 +460,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2969516657780434625, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
-      propertyPath: spikesPerSecond
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2969516657780434638, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -474,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2969516657780434638, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2969516657780434638, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
       propertyPath: m_LocalPosition.z

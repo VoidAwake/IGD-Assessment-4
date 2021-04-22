@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpikeSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject spikePrefab;
-    [SerializeField] private int spikesPerSecond;
+    [SerializeField] private float spikesPerSecond;
     [SerializeField] private float minSpawn;
     [SerializeField] private float maxSpawn;
     void Start()
