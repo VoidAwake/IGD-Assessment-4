@@ -9,7 +9,7 @@ public class Throwable : MonoBehaviour
     public Vector3 objectTargetPosition;
     public Vector3 gameObjectPoint;
     public Vector3 mousePreviousLocation;
-    public Vector3 mouseCurrLocation;
+    public Vector3 mouseCurrentLocation;
 
     public float topSpeed = 10;
 
@@ -40,11 +40,11 @@ public class Throwable : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        mouseCurrLocation = new Vector3(Input.mousePosition.x, Input.mousePosition.y, gameObjectPoint.z);
-        force = mouseCurrLocation - mousePreviousLocation;
-        mousePreviousLocation = mouseCurrLocation;
-        Vector3 curPosition = Camera.main.ScreenToWorldPoint(mouseCurrLocation) - offset;
-        transform.position = curPosition;
+        mouseCurrentLocation = new Vector3(Input.mousePosition.x, Input.mousePosition.y, gameObjectPoint.z);
+        force = mouseCurrentLocation - mousePreviousLocation;
+        mousePreviousLocation = mouseCurrentLocation;
+        Vector3 currentPosition = Camera.main.ScreenToWorldPoint(mouseCurrentLocation) - offset;
+        transform.position = currentPosition;
 
         isDragging = true;
     }
