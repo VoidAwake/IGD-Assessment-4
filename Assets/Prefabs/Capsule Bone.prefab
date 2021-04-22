@@ -16,6 +16,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!231 &-7295104635476842972
+SpringJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015757405995789021}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 1
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1001 &9166697305380049452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27,6 +47,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -9095717837082945937, guid: f9a751505eb1a684f8d1f108f8a33e10, type: 3}
+    - target: {fileID: 4228082255452223725, guid: 4bbd8b7ee9e8df540ac5eeca99bf52fd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4228082255452223725, guid: 4bbd8b7ee9e8df540ac5eeca99bf52fd, type: 3}
       propertyPath: m_Anchor.y
       value: 0.5

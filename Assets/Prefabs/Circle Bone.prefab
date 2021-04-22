@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4228082255452223725}
   - component: {fileID: 2977327563418080314}
   - component: {fileID: -7096752491099995669}
+  - component: {fileID: -1497510961353073124}
   m_Layer: 0
   m_Name: Circle Bone
   m_TagString: Untagged
@@ -160,3 +161,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stickFigure: {fileID: 0}
+--- !u!114 &-1497510961353073124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4228082255452223729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10058edf87f5d249b5fed7f3b4263a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  objectCurrentPosition: {x: 0, y: 0, z: 0}
+  objectTargetPosition: {x: 0, y: 0, z: 0}
+  gameObjectPoint: {x: 0, y: 0, z: 0}
+  mousePreviousLocation: {x: 0, y: 0, z: 0}
+  mouseCurrentLocation: {x: 0, y: 0, z: 0}
+  topSpeed: 10
