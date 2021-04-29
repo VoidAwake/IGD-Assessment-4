@@ -8,9 +8,11 @@ public class SpikeSpawner : MonoBehaviour
     [SerializeField] private float spikesPerSecond;
     [SerializeField] private float minSpawn;
     [SerializeField] private float maxSpawn;
+
     private bool activePattern;
     private float lastPatternTime;
     private bool zigzag;
+
     void Start()
     {
         activePattern = false;
@@ -44,6 +46,11 @@ public class SpikeSpawner : MonoBehaviour
                 zigzag = true;
             }
             Invoke("UpdateActive", 5.5f + (zigzag ? 7.0f : 0.0f)); // wait 5.5 seconds before resuming random spikes, add 7 seconds if a zig zag occured
+        }
+
+        if (Time.timeSinceLevelLoad <= 30.0f)
+        {
+            spikesPerSecond = 2.0f + Time.timeSinceLevelLoad / 30.0f;
         }
     }
 
