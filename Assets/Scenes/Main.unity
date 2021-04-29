@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 913905848}
   m_Layer: 0
   m_Name: Environment
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,6 +488,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2466915005269212708, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006172426273, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006262844476, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006590111635, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006712031430, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006971586809, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006988903548, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007023395991, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007025050489, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007312444551, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704338675443473370, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
     - target: {fileID: 7469135223110958008, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
       propertyPath: m_Name
       value: Stick Figure
@@ -1014,7 +1058,7 @@ GameObject:
   - component: {fileID: 2120206160}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
