@@ -6,9 +6,11 @@ using UnityEngine;
 public class Bone : MonoBehaviour
 {
     [SerializeField] public StickFigure stickFigure;
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Hit Vital");
         stickFigure.CollisionWithSpike();
     }
+
 }

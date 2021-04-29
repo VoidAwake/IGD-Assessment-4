@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spike
+  - Enemy
+  - Limb
+  - Floor
+  - Vital
   layers:
   - Default
   - TransparentFX
