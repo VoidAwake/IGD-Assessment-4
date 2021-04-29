@@ -9,8 +9,6 @@ public class Bone : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hit Vital");
         stickFigure.CollisionWithSpike();
     }
-
 }
