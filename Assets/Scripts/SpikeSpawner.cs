@@ -10,6 +10,7 @@ public class SpikeSpawner : MonoBehaviour
     [SerializeField] private float maxSpawn;
     private bool activePattern;
     private float lastPatternTime;
+    private bool zigzag;
     void Start()
     {
         activePattern = false;
@@ -20,6 +21,7 @@ public class SpikeSpawner : MonoBehaviour
     {
         if (Time.time - lastPatternTime >= 10.0f && !activePattern)
         {
+            zigzag = false;
             activePattern = true;
             CancelInvoke(); // Stop random spikes
 
@@ -39,8 +41,9 @@ public class SpikeSpawner : MonoBehaviour
             if ((pattern == 1 || pattern == 2) && Random.Range(0, 2) == 0) // 50% Chance of occuring after a zig-zag
             {
                 Invoke(pattern == 2 ? "SpikePattern2" : "SpikePattern3", 7.0f); // Invoke other zig-zag
+                zigzag = true;
             }
-            Invoke("UpdateActive", 5.5f);
+            Invoke("UpdateActive", 5.5f + (zigzag ? 7.0f : 0.0f)); // wait 5.5 seconds before resuming random spikes, add 7 seconds if a zig zag occured
         }
     }
 
