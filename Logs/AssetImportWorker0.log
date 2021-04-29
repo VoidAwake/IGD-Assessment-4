@@ -2826,3 +2826,26 @@ Received Import Request.
 Start importing Assets/Sprites/Square 1.png using Guid(8e72b71994b631247a2dd34470d0fc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dab6bfc064cf1d0db6a421a370990c7') in 0.122466 seconds
   Import took 0.126735 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1793 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2592.
+Total: 2.455300 ms (FindLiveObjects: 0.249000 ms CreateObjectMapping: 0.059300 ms MarkObjects: 2.130400 ms  DeleteObjects: 0.015500 ms)
+
