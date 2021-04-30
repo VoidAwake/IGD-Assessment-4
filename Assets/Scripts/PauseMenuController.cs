@@ -7,12 +7,14 @@ using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
-    [SerializeField] private string levelName;
     [SerializeField] private GameObject overlay;
     [SerializeField] private Text levelNameText;
 
+    private string levelName;
+
     private void Start()
     {
+        levelName = SceneManager.GetActiveScene().name;
         levelNameText.text = levelName;
     }
 
@@ -28,7 +30,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void DisplayOverlay(bool enabled)
     {
-        Time.timeScale = enabled ? 1 : 0;
+        Time.timeScale = enabled ? 0 : 1;
         
         overlay.SetActive(enabled);
     }
