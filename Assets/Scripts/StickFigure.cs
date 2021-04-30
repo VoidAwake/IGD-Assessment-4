@@ -27,7 +27,7 @@ public class StickFigure : MonoBehaviour
         {
             SaveHighscore(Time.timeSinceLevelLoad);
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
     private float GetHighscore()
