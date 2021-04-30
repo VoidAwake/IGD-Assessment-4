@@ -20,17 +20,16 @@ public class StickFigure : MonoBehaviour
     {
         UpdateScoreText();
     }
-
+    
     public void CollisionWithSpike()
     {
         if (Time.timeSinceLevelLoad > GetHighscore())
         {
             SaveHighscore(Time.timeSinceLevelLoad);
         }
-
         SceneManager.LoadScene(0);
     }
-
+    
     private float GetHighscore()
     {
         if (!PlayerPrefs.HasKey("highscore"))

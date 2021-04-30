@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 1515276740}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -370,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2969516657780434639, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9113c0820c687e24a98afb01d1237517, type: 3}
 --- !u!1001 &7469135223601163736
@@ -379,6 +383,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2466915005269212708, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915005269212728, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006172426273, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006262844476, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006590111635, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006712031430, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006971586809, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915006988903548, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007023395991, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007025050489, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466915007312444551, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Limb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704338675443473370, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_TagString
+      value: Vital
+      objectReference: {fileID: 0}
     - target: {fileID: 7469135223110958008, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
       propertyPath: m_Name
       value: Stick Figure
@@ -427,5 +479,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9035670101320790749, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+--- !u!1 &7469135223601163737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7469135223110958008, guid: f64596ee22ec4384385a4cb2b044a9b2, type: 3}
+  m_PrefabInstance: {fileID: 7469135223601163736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7469135223601163739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469135223601163737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4235bef61fdfbb947bb09295804824ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
