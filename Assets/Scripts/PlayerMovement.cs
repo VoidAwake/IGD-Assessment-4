@@ -7,11 +7,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private float movementSpeed;
     
-    private Camera camera;
+    private new Camera camera;
     private Vector3 faceRightScale;
     private Vector3 faceLeftScale;
 
-    private Vector3 targetPosition;
+    public Vector3 targetPosition;
+    public Interactable target;
     
     void Start()
     {
@@ -26,23 +27,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePosition = Input.mousePosition;
-
-            targetPosition = camera.ScreenToWorldPoint(mousePosition);
-
-            targetPosition.z = 0;
-            
-            if (targetPosition.x > transform.position.x)
-            {
-                transform.localScale = faceRightScale;
-            }
-            else
-            {
-                transform.localScale = faceLeftScale;
-            }
-        }
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Vector3 mousePosition = Input.mousePosition;
+        //
+        //     targetPosition = camera.ScreenToWorldPoint(mousePosition);
+        //
+        //     targetPosition.z = 0;
+        //     
+        //     if (targetPosition.x > transform.position.x)
+        //     {
+        //         transform.localScale = faceRightScale;
+        //     }
+        //     else
+        //     {
+        //         transform.localScale = faceLeftScale;
+        //     }
+        // }
 
         if (Vector3.Distance(transform.position, targetPosition) > 0.2)
         {
@@ -57,6 +58,12 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             IdleAnimation();
+
+            if (target != null)
+            {
+                target.Inspect();
+                target = null;
+            }
         }
     }
 
@@ -68,5 +75,20 @@ public class PlayerMovement : MonoBehaviour
     private void IdleAnimation()
     {
         animator.SetTrigger("Idle");
+    }
+
+    public void SetTarget(Interactable interactable)
+    {
+        target = interactable;
+        targetPosition = interactable.transform.position;
+        
+        if (targetPosition.x > transform.position.x)
+        {
+            transform.localScale = faceRightScale;
+        }
+        else
+        {
+            transform.localScale = faceLeftScale;
+        }
     }
 }
