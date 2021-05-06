@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour
 		ContinueBtnSound = Resources.Load<AudioClip>("BtnSound");
 
 		audSource = GetComponent<AudioSource>();
-		audSource.volume = 0.7f;
+		audSource.volume = 0.55f;
 	}
 
 	public static void PlaySound (string clip)
