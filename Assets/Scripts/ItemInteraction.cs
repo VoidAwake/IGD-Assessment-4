@@ -16,7 +16,6 @@ public class ItemInteraction : MonoBehaviour
 	private DialogueManager DM;
 	//If a collision has occured -> update trigger.
 	private bool triggered = false;
-	private bool canInteract;
 	//Creating an array of strings used as Sentences within the Text Box.
 	public string[] dialogueSentences;
 
@@ -27,20 +26,14 @@ public class ItemInteraction : MonoBehaviour
 
 	private void Update()
 	{
-		if (triggered)
+		if (triggered && Input.GetKeyDown(KeyCode.F))
 		{
-			if (Input.GetKeyUp(KeyCode.F))
+			if (!DM.dialogActive)
 			{
-				canInteract = DM.canInteract;
-				if (!DM.dialogActive && canInteract)
-				{
-					//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
-					//	script within the GameObjectand passes it through the Dialogue Manager.
-					DM.dialogSentences = dialogueSentences;
-					DM.index = 0;
-					DM.ShowDialogue();
-				}
-				triggered = false;
+				//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
+				//	script within the GameObjectand passes it through the Dialogue Manager.
+				DM.dialogSentences = dialogueSentences;
+				DM.ShowDialogue();
 			}
 		}
 	}
@@ -56,12 +49,12 @@ public class ItemInteraction : MonoBehaviour
 		}
 	}
 
-	//private void OnTriggerExit2D(Collider2D collision)
-	//{
-	//	if (collision.CompareTag("Player"))
-	//	{
-	//		Debug.Log("Out of Range");
-	//		triggered = false;
-	//	}
-	//}
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			Debug.Log("Out of Range");
+			triggered = false;
+		}
+	}
 }

@@ -45,9 +45,9 @@ public class DialogueManager : MonoBehaviour
 	private void Start()
 	{
 		ContinueBtn.SetActive(false);
+		textComponent.text = string.Empty;
 		//Emptying and Disabling the Dialogue Box after 
 		canInteract = true;
-		textComponent.text = string.Empty;
 		dialogActive = false;
 		dialogueBox.SetActive(false);
 	}
@@ -65,7 +65,6 @@ public class DialogueManager : MonoBehaviour
 			else
 			{
 				//Stops the TypeWriting Effect.
-				//Add AudioClip.
 				StopAllCoroutines();
 				textComponent.text = dialogSentences[index];
 				ContinueBtn.SetActive(true);
@@ -76,12 +75,11 @@ public class DialogueManager : MonoBehaviour
 
 	public void ShowDialogue()
 	{
-		//Add audio clip
 		index = 0;
-		StartCoroutine(typeWritterEffect());
 		dialogActive = true;
 		dialogueBox.SetActive(true);
-		canInteract = false;
+		gameObject.SetActive(true);
+		StartCoroutine(typeWritterEffect());
 	}
 
 	IEnumerator typeWritterEffect()
@@ -103,14 +101,16 @@ public class DialogueManager : MonoBehaviour
 		ContinueBtn.SetActive(false);
 		if (index < dialogSentences.Length - 1)
 		{
-			index++; //increment through the dialogue.
+			//increment through the dialogue.
 			textComponent.text = string.Empty;
 			StartCoroutine(typeWritterEffect());
+			index++;
 		}
 		else
 		{
-			ContinueBtn.SetActive(false);
 			CloseDialogue();
+			ContinueBtn.SetActive(false);
+			gameObject.SetActive(false);
 		}
 	}
 
