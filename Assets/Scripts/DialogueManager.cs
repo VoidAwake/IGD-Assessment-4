@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -31,8 +32,10 @@ public class DialogueManager : MonoBehaviour
 	 * Read ItemInteraction Readme and SoundManager.
 	 */
 	public GameObject dialogueBox;
+	public GameObject optionBox;
 	public TextMeshProUGUI textComponent;
 	public GameObject ContinueBtn;
+	public Image CharacterImg;
 	//The speed at which the characters are typed in the text box.
 	public float textSpeed;
 	[HideInInspector] public int index;
@@ -75,6 +78,7 @@ public class DialogueManager : MonoBehaviour
 
 	public void ShowDialogue()
 	{
+		
 		index = 0;
 		dialogActive = true;
 		dialogueBox.SetActive(true);
@@ -84,7 +88,7 @@ public class DialogueManager : MonoBehaviour
 
 	IEnumerator typeWritterEffect()
 	{
-		yield return new WaitForSeconds(0.4f);
+		yield return new WaitForSeconds(0.2f);
 		textComponent.text = string.Empty;
 		foreach (char c in dialogSentences[index].ToCharArray())
 		{
