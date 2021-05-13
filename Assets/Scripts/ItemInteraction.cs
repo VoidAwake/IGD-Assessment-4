@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemInteraction : MonoBehaviour
 {
@@ -14,31 +15,29 @@ public class ItemInteraction : MonoBehaviour
 	 * 
 	 */
 	private DialogueManager DM;
+	private ContextClue CC;
 	//If a collision has occured -> update trigger.
-	private bool triggered = false;
-	private bool canInteract;
+	[HideInInspector] public bool triggered = false;
 	//Creating an array of strings used as Sentences within the Text Box.
 	public string[] dialogueSentences;
 
 	private void Start()
 	{
 		DM = FindObjectOfType<DialogueManager>();
+		CC = FindObjectOfType<ContextClue>();
 	}
 
 	private void Update()
 	{
-		if (triggered && Input.GetKeyUp(KeyCode.F)) 
+		if (triggered && Input.GetKeyDown(KeyCode.F))
 		{
-			canInteract = DM.canInteract;
-			if (!DM.dialogActive && canInteract)
+			if (!DM.dialogActive)
 			{
 				//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 				//	script within the GameObjectand passes it through the Dialogue Manager.
 				DM.dialogSentences = dialogueSentences;
-				DM.index = 0;
 				DM.ShowDialogue();
 			}
-			triggered = false;
 		}
 	}
 
@@ -50,6 +49,7 @@ public class ItemInteraction : MonoBehaviour
 		{
 			Debug.Log("In Range");
 			triggered = true;
+			CC.promptClue = triggered;
 		}
 	}
 
@@ -59,6 +59,7 @@ public class ItemInteraction : MonoBehaviour
 		{
 			Debug.Log("Out of Range");
 			triggered = false;
+			CC.promptClue = triggered;
 		}
 	}
 }
