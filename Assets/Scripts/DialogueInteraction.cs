@@ -14,6 +14,7 @@ public class DialogueInteraction : Interactable
 	 * 
 	 */
 	private DialogueManager DM;
+
 	private NotebookController notebook;
 
 	[SerializeField] private Evidence evidence;
@@ -27,8 +28,7 @@ public class DialogueInteraction : Interactable
 	}
 
 	protected override void Interact() {
-		canInteract = DM.canInteract;
-		if (!DM.dialogActive && canInteract)
+		if (!DM.dialogActive)
 		{
 			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 			//	script within the GameObjectand passes it through the Dialogue Manager.

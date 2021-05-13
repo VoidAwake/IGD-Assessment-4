@@ -5,7 +5,6 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    //If a collision has occured -> update trigger.
     protected bool playerInRange = false;
 
     private void Update()
