@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInteraction : Interactable
+public class DialogueInteraction : Interactable
 {
 	/*README---
 	 * 
