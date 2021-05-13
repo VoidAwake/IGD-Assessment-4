@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (target != null)
             {
-                target.Inspect();
+                // target.Inspect();
                 target = null;
             }
         }

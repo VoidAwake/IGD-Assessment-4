@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInteraction : MonoBehaviour
+public class ItemInteraction : Interactable
 {
 	/*README---
 	 * 
@@ -14,8 +14,7 @@ public class ItemInteraction : MonoBehaviour
 	 * 
 	 */
 	private DialogueManager DM;
-	//If a collision has occured -> update trigger.
-	private bool playerInRange = false;
+
 	private bool canInteract;
 	//Creating an array of strings used as Sentences within the Text Box.
 	public string[] dialogueSentences;
@@ -25,40 +24,16 @@ public class ItemInteraction : MonoBehaviour
 		DM = FindObjectOfType<DialogueManager>();
 	}
 
-	private void Update()
-	{
-		if (playerInRange && Input.GetKeyUp(KeyCode.F)) 
+	protected override void Interact() {
+		canInteract = DM.canInteract;
+		if (!DM.dialogActive && canInteract)
 		{
-			canInteract = DM.canInteract;
-			if (!DM.dialogActive && canInteract)
-			{
-				//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
-				//	script within the GameObjectand passes it through the Dialogue Manager.
-				DM.dialogSentences = dialogueSentences;
-				DM.index = 0;
-				DM.ShowDialogue();
-			}
-			playerInRange = false;
+			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
+			//	script within the GameObjectand passes it through the Dialogue Manager.
+			DM.dialogSentences = dialogueSentences;
+			DM.index = 0;
+			DM.ShowDialogue();
 		}
-	}
-
-	//Two Collider2D Functions to trigger the Boolean when Entering and Existing.
-	//triggered Bool Used within Update().
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		if (collision.CompareTag("Player"))
-		{
-			Debug.Log("In Range");
-			playerInRange = true;
-		}
-	}
-
-	private void OnTriggerExit2D(Collider2D collision)
-	{
-		if (collision.CompareTag("Player"))
-		{
-			Debug.Log("Out of Range");
-			playerInRange = false;
-		}
+		playerInRange = false;
 	}
 }
