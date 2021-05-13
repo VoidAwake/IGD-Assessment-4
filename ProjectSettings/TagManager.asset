@@ -10,6 +10,7 @@ TagManager:
   - Floor
   - Vital
   - Fallen
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ladder
   - 
   - 
   - 

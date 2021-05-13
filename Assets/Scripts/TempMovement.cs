@@ -8,9 +8,11 @@ public class TempMovement : MonoBehaviour
     [SerializeField] private PlayerAnimation animation;
     public float MovementSpeed = 1;
     public float JumpForce = 1;
+    public float ClimbingSpeed;
     public bool canMove;
+    public bool isLadder;
 
-    private Rigidbody2D rb;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +24,20 @@ public class TempMovement : MonoBehaviour
     void Update()
     {
         if (canMove == true)
-		{
-            var movement = Input.GetAxisRaw("Horizontal");
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        {
+			var movement = Input.GetAxisRaw("Horizontal") * MovementSpeed;
+			var Vmovement = Input.GetAxisRaw("Vertical") * ClimbingSpeed;
 
-            if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
-            {
-                rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+			transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+
+			if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+			{
+				rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+			}
+			if (isLadder == true)
+			{
+                rb.gravityScale = 0;
+                transform.position += new Vector3(0, Vmovement, 0) * Time.deltaTime * ClimbingSpeed;
             }
 
             if (Math.Abs(movement) != 0) {
@@ -40,6 +49,27 @@ public class TempMovement : MonoBehaviour
             } else {
                 animation.IdleAnimation();
             }
+            rb.gravityScale = 1;
         }
+    }
+
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Ladder"))
+		{
+            Debug.Log("On Ladder");
+            isLadder = true;
+		}
+
+	}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            Debug.Log("Off Ladder");
+            isLadder = false;
+        }
+
     }
 }
