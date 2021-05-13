@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class TempMovement : MonoBehaviour
     void Update()
     {
         if (canMove == true)
-		{
+        {
             var movement = Input.GetAxisRaw("Horizontal");
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
