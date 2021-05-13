@@ -56,12 +56,12 @@ public class ItemInteraction : MonoBehaviour
 		}
 	}
 
-	//private void OnTriggerExit2D(Collider2D collision)
-	//{
-	//	if (collision.CompareTag("Player"))
-	//	{
-	//		Debug.Log("Out of Range");
-	//		triggered = false;
-	//	}
-	//}
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			Debug.Log("Out of Range");
+			triggered = false;
+		}
+	}
 }
