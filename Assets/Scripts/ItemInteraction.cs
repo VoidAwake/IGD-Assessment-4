@@ -15,7 +15,7 @@ public class ItemInteraction : MonoBehaviour
 	 */
 	private DialogueManager DM;
 	//If a collision has occured -> update trigger.
-	private bool triggered = false;
+	private bool playerInRange = false;
 	private bool canInteract;
 	//Creating an array of strings used as Sentences within the Text Box.
 	public string[] dialogueSentences;
@@ -27,7 +27,7 @@ public class ItemInteraction : MonoBehaviour
 
 	private void Update()
 	{
-		if (triggered && Input.GetKeyUp(KeyCode.F)) 
+		if (playerInRange && Input.GetKeyUp(KeyCode.F)) 
 		{
 			canInteract = DM.canInteract;
 			if (!DM.dialogActive && canInteract)
@@ -38,7 +38,7 @@ public class ItemInteraction : MonoBehaviour
 				DM.index = 0;
 				DM.ShowDialogue();
 			}
-			triggered = false;
+			playerInRange = false;
 		}
 	}
 
@@ -49,7 +49,7 @@ public class ItemInteraction : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			Debug.Log("In Range");
-			triggered = true;
+			playerInRange = true;
 		}
 	}
 
@@ -58,7 +58,7 @@ public class ItemInteraction : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			Debug.Log("Out of Range");
-			triggered = false;
+			playerInRange = false;
 		}
 	}
 }
