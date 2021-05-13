@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using DefaultNamespace;
 using UnityEngine;
 
 public class DialogueInteraction : Interactable
@@ -14,14 +14,16 @@ public class DialogueInteraction : Interactable
 	 * 
 	 */
 	private DialogueManager DM;
+	private NotebookController notebook;
+
+	[SerializeField] private Evidence evidence;
 
 	private bool canInteract;
-	//Creating an array of strings used as Sentences within the Text Box.
-	public string[] dialogueSentences;
 
 	private void Start()
 	{
 		DM = FindObjectOfType<DialogueManager>();
+		notebook = FindObjectOfType<NotebookController>();
 	}
 
 	protected override void Interact() {
@@ -30,9 +32,11 @@ public class DialogueInteraction : Interactable
 		{
 			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 			//	script within the GameObjectand passes it through the Dialogue Manager.
-			DM.dialogSentences = dialogueSentences;
+			DM.dialogSentences = evidence.dialogue.Split(new string[] { "\n\n" }, StringSplitOptions.None);
 			DM.index = 0;
 			DM.ShowDialogue();
+			
+			notebook.AddEvidence(evidence);
 		}
 		playerInRange = false;
 	}
