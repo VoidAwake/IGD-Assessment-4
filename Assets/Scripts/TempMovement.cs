@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class TempMovement : MonoBehaviour
 {
-    public float MovementSpeed = 1;
-    public float JumpForce = 1;
-    public bool canMove;
+    public float MovementSpeed;
+    public float JumpForce;
+    public float ClimbingSpeed;
 
-    private Rigidbody2D rb;
+    public bool canMove;
+    public bool isLadder;
+
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +25,41 @@ public class TempMovement : MonoBehaviour
     {
         if (canMove == true)
         {
-            var movement = Input.GetAxisRaw("Horizontal");
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+			var movement = Input.GetAxisRaw("Horizontal") * MovementSpeed;
+			var Vmovement = Input.GetAxisRaw("Vertical") * ClimbingSpeed;
 
-            if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
-            {
-                rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+			transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+
+			if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+			{
+				rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+			}
+			if (isLadder == true)
+			{
+                rb.gravityScale = 0;
+                transform.position += new Vector3(0, Vmovement, 0) * Time.deltaTime * ClimbingSpeed;
             }
+            rb.gravityScale = 1;
         }
+    }
+
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Ladder"))
+		{
+            Debug.Log("On Ladder");
+            isLadder = true;
+		}
+
+	}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            Debug.Log("Off Ladder");
+            isLadder = false;
+        }
+
     }
 }
