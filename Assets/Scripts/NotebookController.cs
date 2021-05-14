@@ -12,12 +12,18 @@ public class NotebookController : MonoBehaviour
 
     private bool notebookOpen = false;
 
-    private List<Evidence> evidences = new List<Evidence>();
     private List<GameObject> evidenceTexts = new List<GameObject>();
     
     void Start()
     {
         mainPanel.SetActive(false);
+
+        Debug.Log(PersistentData.FoundEvidence.Count);
+
+        foreach (var evidence in PersistentData.FoundEvidence)
+        {
+            DisplayEvidence(evidence);
+        }
     }
 
     void Update()
@@ -37,10 +43,14 @@ public class NotebookController : MonoBehaviour
 
     public void AddEvidence(Evidence evidence)
     {
-        if (evidences.Contains(evidence)) return;
+        if (PersistentData.FoundEvidence.Contains(evidence)) return;
             
-        evidences.Add(evidence);
+        PersistentData.FoundEvidence.Add(evidence);
 
+        DisplayEvidence(evidence);
+    }
+
+    public void DisplayEvidence(Evidence evidence) {
         foreach (var description in evidence.descriptions)
         {
             GameObject newEvidenceText = Instantiate(
