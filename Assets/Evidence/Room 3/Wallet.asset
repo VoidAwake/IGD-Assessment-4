@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Wallet
   m_EditorClassIdentifier: 
-  description: Wallet found in (3)'s room
+  description: 
+  descriptions:
+  - Wallet found in (3)'s room
   dialogue: 'Seems pretty standard of a wallet.
 
     There are some spare bills inside
     and (3) driver''s license.'
+  speakerSprite: {fileID: 0}

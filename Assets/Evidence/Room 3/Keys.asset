@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Keys
   m_EditorClassIdentifier: 
-  description: A set of keys found in (3)'s room
+  description: 
+  descriptions:
+  - A set of keys found in (3)'s room
   dialogue: 'There is a set of keys on the floor.
 
     One for a car and one presumably
@@ -20,3 +22,4 @@ MonoBehaviour:
 
     It''s most likely not for the apartment door as (3) had just
     greeted me on the way in.'
+  speakerSprite: {fileID: 0}

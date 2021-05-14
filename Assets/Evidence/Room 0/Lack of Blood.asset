@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Lack of Blood
   m_EditorClassIdentifier: 
-  description: Lack of blood
+  description: 
+  descriptions:
+  - Lack of blood
   dialogue: 'There is a lack of blood at the scene of the crime.
 
     That''s odd
@@ -20,3 +22,4 @@ MonoBehaviour:
 
     The blood can''t have disappeared
     by itself.'
+  speakerSprite: {fileID: 0}

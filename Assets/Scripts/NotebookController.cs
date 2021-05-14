@@ -40,19 +40,20 @@ public class NotebookController : MonoBehaviour
         if (evidences.Contains(evidence)) return;
             
         evidences.Add(evidence);
+
+        foreach (var description in evidence.descriptions)
+        {
+            GameObject newEvidenceText = Instantiate(
+                evidenceText,
+                textPadding + Vector2.down * (evidenceTexts.Count * verticalTextOffset),
+                Quaternion.identity
+            );
+
+            newEvidenceText.transform.SetParent(mainPanel.transform, false);
             
-        GameObject newEvidenceText = Instantiate(
-            evidenceText,
-            textPadding + Vector2.down * (evidenceTexts.Count * verticalTextOffset),
-            Quaternion.identity
-        );
+            evidenceTexts.Add(newEvidenceText);
 
-        newEvidenceText.transform.SetParent(mainPanel.transform, false);
-        
-        // newEvidenceText.transform.Translate(Vector3.down * (evidenceTexts.Count * verticalTextOffset));
-        
-        evidenceTexts.Add(newEvidenceText);
-
-        newEvidenceText.GetComponent<Text>().text = evidence.description;
+            newEvidenceText.GetComponent<Text>().text = description;
+        }
     }
 }

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: (1)'s Whereabouts
   m_EditorClassIdentifier: 
-  description: (1)'s Whereabouts
+  description: 
+  descriptions:
+  - (1)'s Whereabouts
   dialogue: '(1) had been on a holiday for 2 days and only got back the day after
     the victim had died.
 
@@ -23,3 +25,4 @@ MonoBehaviour:
 
     If I recall they found
     the body when they opened the door, what were they doing there?'
+  speakerSprite: {fileID: 0}

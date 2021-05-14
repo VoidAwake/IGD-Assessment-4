@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Broken Flowerpot
   m_EditorClassIdentifier: 
-  description: Broken flowerpot found in (1)'s room
+  description: 
+  descriptions:
+  - Broken flowerpot found in (1)'s room
   dialogue: 'There is a flowerpot on the ground presumable from the hanging decors
     on the ceiling.
 
@@ -20,3 +22,4 @@ MonoBehaviour:
 
     Where
     could it have gone?'
+  speakerSprite: {fileID: 0}

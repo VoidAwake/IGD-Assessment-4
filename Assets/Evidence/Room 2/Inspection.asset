@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Inspection
   m_EditorClassIdentifier: 
-  description: State of (2)'s room
+  description: 
+  descriptions:
+  - State of (2)'s room
   dialogue: 'Seems like there''s nothing of note in here.
 
     The bedsheets are
     rumpled showing signs that the bed has been slept in.'
+  speakerSprite: {fileID: 0}

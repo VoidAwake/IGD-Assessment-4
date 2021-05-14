@@ -10,11 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Alibi Part 3
+  m_Name: Rope and Chair
   m_EditorClassIdentifier: 
   description: 
   descriptions:
-  - (3)'s alibi
-  dialogue: (3) says that they were asleep when (1) and (4) found the body so they
-    can't say when exactly the two of them came back from the airport.
+  - Rope in victim's room
+  - Broken chair in the victim's room.
+  dialogue: 'A rope tied into a noose is hanging form the ceiling.
+
+    Someone may
+    have staged it to look like a suicide.
+
+    While the room shows no signs of
+    a struggle or break-in, there is a broken chair nearby.
+
+    It appears to have
+    broken under too much weight.'
   speakerSprite: {fileID: 0}

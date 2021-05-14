@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Security Footage
   m_EditorClassIdentifier: 
-  description: Security footage from (3)'s workplace
+  description: 
+  descriptions:
+  - Security footage from (3)'s workplace
   dialogue: '(3) enters the building at 12:10PM.
 
     (3) grabs a clock from their
@@ -22,3 +24,4 @@ MonoBehaviour:
 
     Theres no reasonable way for
     them to have made it home by 8:30PM.'
+  speakerSprite: {fileID: 0}

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Keys (Update)
   m_EditorClassIdentifier: 
-  description: Door Key from (3)'s room
+  description: 
+  descriptions:
+  - Door Key from (3)'s room
   dialogue: 'The key doesn''t work on (3)''s office.
 
     It must be a key to somewhere
     else.'
+  speakerSprite: {fileID: 0}

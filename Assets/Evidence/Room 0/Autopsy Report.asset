@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Autopsy Report
   m_EditorClassIdentifier: 
-  description: Victim's autopsy report
+  description: 
+  descriptions:
+  - Victim's autopsy report
   dialogue: 'Estimated time of death: ~8:30PM.
 
     Cause of death: Suffocation.

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Cars
   m_EditorClassIdentifier: 
-  description: (4)'s statement about the cars
+  description: 
+  descriptions:
+  - (4)'s statement about the cars
   dialogue: 'Only (4) and the victim owned cars.
 
     Those must be the 2 cars that
     (2) saw in the parking lot.'
+  speakerSprite: {fileID: 0}

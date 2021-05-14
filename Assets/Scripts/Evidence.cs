@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -5,7 +6,7 @@ namespace DefaultNamespace
     [CreateAssetMenu]
     public class Evidence : ScriptableObject
     {
-        public string description;
+        public List<string> descriptions;
         [TextArea] public string dialogue;
         public Sprite speakerSprite;
     }

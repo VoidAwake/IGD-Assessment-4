@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 3
   m_EditorClassIdentifier: 
-  description: (2)'s alibi
+  description: 
+  descriptions:
+  - (2)'s alibi
   dialogue: (2) thinks that (1) and (4) found the body at the same time at 12:50AM
     because they heard (1) fainting.
+  speakerSprite: {fileID: 0}

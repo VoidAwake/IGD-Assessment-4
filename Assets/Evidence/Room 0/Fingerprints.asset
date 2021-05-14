@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Fingerprints
   m_EditorClassIdentifier: 
-  description: Fingerprints found on the room's doorknob
+  description: 
+  descriptions:
+  - Fingerprints found on the room's doorknob
   dialogue: Fingerprints from (1) were found on the doorknob.
+  speakerSprite: {fileID: 0}

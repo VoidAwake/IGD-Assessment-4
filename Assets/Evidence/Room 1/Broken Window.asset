@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Broken Window
   m_EditorClassIdentifier: 
-  description: Broken window in (1)'s room
+  description: 
+  descriptions:
+  - Broken window in (1)'s room
   dialogue: 'The window here is broken.
 
     This is very suspicious, what could''ve
     broken it?'
+  speakerSprite: {fileID: 0}

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Hanging Plant Decor
   m_EditorClassIdentifier: 
-  description: Plant decor in (1)'s room
+  description: 
+  descriptions:
+  - Plant decor in (1)'s room
   dialogue: 'There are some plant''s hanging around as decoration.
 
     ...
 
     These
     ropes match the ones found in the victim''s room!'
+  speakerSprite: {fileID: 0}

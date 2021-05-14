@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 2
   m_EditorClassIdentifier: 
-  description: (2)'s Alibi
+  description: 
+  descriptions:
+  - (2)'s Alibi
   dialogue: '(2) claims to have woken at 10:30PM because of a loud commotion.
 
     They
@@ -22,3 +24,4 @@ MonoBehaviour:
     outside the apartment.
 
     (3) usually comes home earlier than this.'
+  speakerSprite: {fileID: 0}

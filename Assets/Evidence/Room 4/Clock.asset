@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Clock
   m_EditorClassIdentifier: 
-  description: Clock found in (4)'s room
+  description: 
+  descriptions:
+  - Clock found in (4)'s room
   dialogue: 'There is a broken and dented digital clock here.
 
     It looks like
@@ -25,3 +27,4 @@ MonoBehaviour:
 
     There are no fingerprints
     on the clock.'
+  speakerSprite: {fileID: 0}

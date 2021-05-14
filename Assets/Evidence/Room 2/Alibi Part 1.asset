@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 1
   m_EditorClassIdentifier: 
-  description: (2)'s Alibi
+  description: 
+  descriptions:
+  - (2)'s Alibi
   dialogue: '(2) says he was home the entire day and was sleeping from 6PM - 10:30PM.
 
     They
     heard the sound of a car nearby right before they fell asleep.'
+  speakerSprite: {fileID: 0}

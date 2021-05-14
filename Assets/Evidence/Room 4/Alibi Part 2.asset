@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 2
   m_EditorClassIdentifier: 
-  description: (4)'s alibi
+  description: 
+  descriptions:
+  - (4)'s alibi
   dialogue: '(4) says that they left at 10PM to go pick up (1) from the airport.
 
     They
     arrived back home at 1AM.'
+  speakerSprite: {fileID: 0}

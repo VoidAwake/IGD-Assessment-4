@@ -608,6 +608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Broken Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 1829086839308735686, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8564814880431414762, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
       propertyPath: evidence
       value: 
@@ -886,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829086839308735682, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.96
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 1829086839308735682, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
       propertyPath: m_LocalPosition.y
@@ -926,7 +930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829086839308735686, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
       propertyPath: m_Name
-      value: Rope
+      value: Rope and Chair
       objectReference: {fileID: 0}
     - target: {fileID: 8564814880431414762, guid: 0dbb12ad34a5ac74f90ddd20e0ef0084, type: 3}
       propertyPath: evidence

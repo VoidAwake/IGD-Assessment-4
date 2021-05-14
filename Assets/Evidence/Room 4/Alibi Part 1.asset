@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 1
   m_EditorClassIdentifier: 
-  description: (4)'s Alibi
+  description: 
+  descriptions:
+  - (4)'s Alibi
   dialogue: '(4) says they drove (3) to work at 10AM and dropped them off at 12PM.
 
     (4)
@@ -20,3 +22,4 @@ MonoBehaviour:
 
     (4) says that their car was the only one in the
     parking lot and (2) was the only other person at home.'
+  speakerSprite: {fileID: 0}

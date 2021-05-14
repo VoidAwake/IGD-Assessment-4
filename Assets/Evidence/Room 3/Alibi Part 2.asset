@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 2
   m_EditorClassIdentifier: 
-  description: (3)'s alibi
+  description: 
+  descriptions:
+  - (3)'s alibi
   dialogue: '(3) said they saw (2) in the hallway as they returned from work at 10:30PM.
 
     That''s
     quite suspicious.'
+  speakerSprite: {fileID: 0}
