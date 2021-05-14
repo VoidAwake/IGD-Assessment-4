@@ -16,6 +16,30 @@ public class TempMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        switch(PlayerPrefs.GetInt("PrevLevel"))
+        {
+            case 0:
+                transform.position = new Vector3(0.25f, -0.3f);
+                break;
+            case 1:
+                transform.position = new Vector3(-2.0f, -0.3f);
+                break;
+            case 2:
+                transform.position = new Vector3(-0.6f, -0.3f);
+                break;
+            case 3:
+                transform.position = new Vector3(0, -0.3f);
+                break;
+            case 4:
+                transform.position = new Vector3(0, -0.3f);
+                break;
+            case 5:
+                transform.position = new Vector3(0, -0.3f);
+                break;
+            default:
+                transform.position = new Vector3(0, -0.3f);
+                break;
+        }
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
     }
