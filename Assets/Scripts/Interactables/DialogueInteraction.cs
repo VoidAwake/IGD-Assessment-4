@@ -32,9 +32,8 @@ public class DialogueInteraction : Interactable
 		{
 			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 			//	script within the GameObjectand passes it through the Dialogue Manager.
-			DM.dialogSentences = evidence.dialogue.Split(new string[] { "\n\n" }, StringSplitOptions.None);
-			DM.index = 0;
-			DM.ShowDialogue();
+			string[] sentences = evidence.dialogue.Split(new string[] { "\n\n" }, StringSplitOptions.None);
+			DM.ShowDialogue(sentences, evidence.speakerSprite);
 			
 			notebook.AddEvidence(evidence);
 		}

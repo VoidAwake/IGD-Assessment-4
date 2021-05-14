@@ -7,5 +7,6 @@ namespace DefaultNamespace
     {
         public string description;
         [TextArea] public string dialogue;
+        public Sprite speakerSprite;
     }
 }

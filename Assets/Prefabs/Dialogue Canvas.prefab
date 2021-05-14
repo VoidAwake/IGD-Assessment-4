@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 9216288388344323598}
   - component: {fileID: 9216288388344323599}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,12 +305,12 @@ MonoBehaviour:
   optionBox: {fileID: 0}
   textComponent: {fileID: 9216288389986955345}
   ContinueBtn: {fileID: 9216288388519382765}
-  CharacterImg: {fileID: 0}
+  speakerImage: {fileID: 9216288389493822058}
+  defaultSpeakerSprite: {fileID: 21300000, guid: 60d6a376da5af104fb9aabb0c75785a9, type: 3}
   textSpeed: 20
   index: 0
   dialogActive: 0
   canInteract: 0
-  dialogSentences: []
 --- !u!114 &9216288389170180715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 60d6a376da5af104fb9aabb0c75785a9, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
