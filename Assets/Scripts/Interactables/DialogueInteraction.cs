@@ -34,9 +34,8 @@ public class DialogueInteraction : Interactable
 			//	script within the GameObjectand passes it through the Dialogue Manager.
 			string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
 			DM.ShowDialogue(sentences, evidence.speakerSprite);
-			
 			notebook.AddEvidence(evidence);
 		}
-		playerInRange = false;
+		//playerInRange = false;
 	}
 }
