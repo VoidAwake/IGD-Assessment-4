@@ -13,6 +13,7 @@ public class TempMovement : MonoBehaviour
     public bool isLadder;
 
     Rigidbody2D rb;
+    public DialogueManager DM;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,7 @@ public class TempMovement : MonoBehaviour
                 transform.position = new Vector3(0, -0.3f);
                 break;
         }
+        DM = FindObjectOfType<DialogueManager>();
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
     }
@@ -47,7 +49,7 @@ public class TempMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove == true)
+        if (DM.isInteracting == false)
         {
 			var movement = Input.GetAxisRaw("Horizontal") * MovementSpeed;
 			var Vmovement = Input.GetAxisRaw("Vertical") * ClimbingSpeed;

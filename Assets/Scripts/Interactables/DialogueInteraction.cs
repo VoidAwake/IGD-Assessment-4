@@ -19,7 +19,7 @@ public class DialogueInteraction : Interactable
 
 	[SerializeField] private Evidence evidence;
 
-	private bool canInteract;
+	protected bool isInteracting;
 
 	private void Start()
 	{
@@ -35,7 +35,7 @@ public class DialogueInteraction : Interactable
 			string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
 			DM.ShowDialogue(sentences, evidence.speakerSprite);
 			notebook.AddEvidence(evidence);
+			DM.isInteracting = true; ;
 		}
-		//playerInRange = false;
 	}
 }

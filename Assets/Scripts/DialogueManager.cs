@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour
 
 	[HideInInspector] public bool dialogActive;
 
+	public bool isInteracting;
 	private int index;
 	private string[] dialogSentences;
 
@@ -114,6 +115,7 @@ public class DialogueManager : MonoBehaviour
 			CloseDialogue();
 			ContinueBtn.SetActive(false);
 			gameObject.SetActive(false);
+			isInteracting = false;
 		}
 	}
 
