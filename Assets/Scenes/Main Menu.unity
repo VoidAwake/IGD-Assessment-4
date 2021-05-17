@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9216288389170180725, guid: bf4845f58f47a1441bd68289f2e5725f, type: 3}
+      propertyPath: textSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf4845f58f47a1441bd68289f2e5725f, type: 3}
 --- !u!1001 &24786278
@@ -489,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed60dc50e2fc4844faa180123768c8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
   evidence: {fileID: 11400000, guid: 0295b74d97a34b34baad80592c36ba32, type: 2}
 --- !u!1001 &1718788060
 PrefabInstance:
@@ -580,6 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed60dc50e2fc4844faa180123768c8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
   evidence: {fileID: 11400000, guid: 0295b74d97a34b34baad80592c36ba32, type: 2}
 --- !u!1001 &1777876516
 PrefabInstance:
@@ -671,6 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed60dc50e2fc4844faa180123768c8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
   evidence: {fileID: 11400000, guid: 0295b74d97a34b34baad80592c36ba32, type: 2}
 --- !u!4 &1797970243 stripped
 Transform:
