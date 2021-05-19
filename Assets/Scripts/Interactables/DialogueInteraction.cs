@@ -35,5 +35,6 @@ public class DialogueInteraction : Interactable
 		DM.ShowDialogue(sentences, evidence.speakerSprite);
 		notebook.AddEvidence(evidence);
 		DM.isInteracting = true;
+		Debug.Log("new interaction");
 	}
 }

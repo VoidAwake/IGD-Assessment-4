@@ -45,6 +45,8 @@ public class DialogueManager : MonoBehaviour
 	private int index;
 	private string[] dialogSentences;
 
+	public bool setInteracting = false;
+
 	private void Awake()
 	{
 		ContinueBtn.SetActive(false);
@@ -56,6 +58,12 @@ public class DialogueManager : MonoBehaviour
 
 	private void Update()
 	{
+		if (setInteracting)
+		{
+			isInteracting = false;
+			setInteracting = false;
+		}
+
 		if (dialogActive && Input.GetKeyDown(KeyCode.F))
 		{
 			//If the Dialogue in the Text Box equals the current position within the dialogSentence[index],
@@ -82,7 +90,7 @@ public class DialogueManager : MonoBehaviour
 		index = 0;
 		dialogActive = true;
 		dialogueBox.SetActive(true);
-		gameObject.SetActive(true);
+		// gameObject.SetActive(true);
 		StartCoroutine(typeWritterEffect());
 	}
 
@@ -114,8 +122,7 @@ public class DialogueManager : MonoBehaviour
 		{
 			CloseDialogue();
 			ContinueBtn.SetActive(false);
-			gameObject.SetActive(false);
-			isInteracting = false;
+			setInteracting = true;
 		}
 	}
 
