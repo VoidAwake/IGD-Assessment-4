@@ -13,29 +13,28 @@ public class DialogueInteraction : Interactable
 	 * Read Dialogue Manager Readme.
 	 * 
 	 */
-	private DialogueManager DM;
+	
 
 	private NotebookController notebook;
 
-	[SerializeField] private Evidence evidence;
+	[SerializeField] protected Evidence evidence;
 
 	protected bool isInteracting;
 
-	private void Start()
+	protected override void Start()
 	{
-		DM = FindObjectOfType<DialogueManager>();
+		base.Start();
+		
 		notebook = FindObjectOfType<NotebookController>();
 	}
 
 	protected override void Interact() {
-		if (!DM.dialogActive)
-		{
-			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
-			//	script within the GameObjectand passes it through the Dialogue Manager.
-			string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
-			DM.ShowDialogue(sentences, evidence.speakerSprite);
-			notebook.AddEvidence(evidence);
-			DM.isInteracting = true; ;
-		}
+		//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
+		//	script within the GameObjectand passes it through the Dialogue Manager.
+		string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
+		DM.ShowDialogue(sentences, evidence.speakerSprite);
+		notebook.AddEvidence(evidence);
+		DM.isInteracting = true;
+		Debug.Log("new interaction");
 	}
 }

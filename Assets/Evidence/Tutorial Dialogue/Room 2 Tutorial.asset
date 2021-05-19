@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Broken Pot and Window
+  m_Name: Room 2 Tutorial
   m_EditorClassIdentifier: 
   descriptions: []
-  dialogue: 'There''s a broken flowerpot on the ground presumably from the hanging
-    decors on the ceiling.
+  dialogue: 'Press [Q] to open your notebook and view your notes.
 
-    The rope that held it appears to be missing.
-
-    The
-    window has also been broken.'
+    You can click
+    on two notes to try to make a connection between them.'
   speakerSprite: {fileID: 0}
