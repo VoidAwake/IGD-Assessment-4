@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
+  m_Name: Broken Chair
+  m_EditorClassIdentifier: 
+  description: 
+  descriptions:
+  - Broken chair in the victim's room.
+  dialogue: 'While the room shows no signs of a struggle or break-in, there is a
+    broken chair.\nIt appears to have broken under too much weight.'
+  speakerSprite: {fileID: 0}

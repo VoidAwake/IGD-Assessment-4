@@ -31,26 +31,25 @@ public class DialogueManager : MonoBehaviour
 	 * 
 	 * Read ItemInteraction Readme and SoundManager.
 	 */
-	public GameObject dialogueBox;
-	public GameObject optionBox;
-	public TextMeshProUGUI textComponent;
-	public GameObject ContinueBtn;
-	public Image CharacterImg;
-	//The speed at which the characters are typed in the text box.
-	public float textSpeed;
-	[HideInInspector] public int index;
-	[HideInInspector] public bool dialogActive;
-	[HideInInspector] public bool canInteract;
+	[SerializeField] private GameObject dialogueBox;
+	[SerializeField] private GameObject optionBox;
+	[SerializeField] private TextMeshProUGUI textComponent;
+	[SerializeField] private GameObject ContinueBtn;
+	[SerializeField] private Image speakerImage;
+	[SerializeField] private Sprite defaultSpeakerSprite;
+	[SerializeField] private float textSpeed; //The speed at which the characters are typed in the text box.
 
-	//This string array gets the sentence/dialogue's from ItemInteraction when it gets called within the Update() function.
-	[HideInInspector]public string[] dialogSentences;
+	[HideInInspector] public bool dialogActive;
+
+	public bool isInteracting;
+	private int index;
+	private string[] dialogSentences;
 
 	private void Start()
 	{
 		ContinueBtn.SetActive(false);
 		textComponent.text = string.Empty;
 		//Emptying and Disabling the Dialogue Box after 
-		canInteract = true;
 		dialogActive = false;
 		dialogueBox.SetActive(false);
 	}
@@ -76,9 +75,10 @@ public class DialogueManager : MonoBehaviour
 		}
 	}
 
-	public void ShowDialogue()
+	public void ShowDialogue(string[] sentences, Sprite speakerSprite)
 	{
-		
+		speakerImage.sprite = speakerSprite == null ? defaultSpeakerSprite : speakerSprite;
+		dialogSentences = sentences;
 		index = 0;
 		dialogActive = true;
 		dialogueBox.SetActive(true);
@@ -115,6 +115,7 @@ public class DialogueManager : MonoBehaviour
 			CloseDialogue();
 			ContinueBtn.SetActive(false);
 			gameObject.SetActive(false);
+			isInteracting = false;
 		}
 	}
 
@@ -123,6 +124,5 @@ public class DialogueManager : MonoBehaviour
 		dialogueBox.SetActive(false);
 		dialogActive = false;
 		textComponent.text = string.Empty;
-		canInteract = true;
 	}
 }

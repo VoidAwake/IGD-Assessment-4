@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
+  m_Name: Rope and Chair
+  m_EditorClassIdentifier: 
+  description: 
+  descriptions:
+  - The victim's room shows no signs of a struggle or break-in.
+  - There is a broken chair in the victim's room.
+  dialogue: 'A rope tied into a noose is hanging from the ceiling.
+
+    Someone may have staged it to look like a suicide.
+
+    While the room shows no signs of a struggle or break-in, there is a broken chair nearby.
+
+    It appears to have broken under too much weight.'
+  speakerSprite: {fileID: 0}
