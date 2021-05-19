@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
+  m_Name: Neighbour 2
+  m_EditorClassIdentifier: 
+  descriptions:
+  - Tim heard someone drive away at 6PM.
+  - Tim heard someone break two pots in room one at 10:00AM.
+  - Tim was woken up by a loud commotion at 10:30PM. He went into the hallway and
+    saw Joe.
+  - Tim saw two cars outside at 10:30PM.
+  - Tim said that Joe usually get's home at 10:00PM.
+  - Tim said that he heard the sound of someone fainting at 12:50AM.
+  evidencePieces:
+  - {fileID: 11400000, guid: 34a3766a1ede9514388b3c121d259e35, type: 2}
+  - {fileID: 11400000, guid: b8d6eec03c73cde449974497b34a56ba, type: 2}
+  - {fileID: 11400000, guid: e3ee69a3f137de8478b4ff9bcb25bfb6, type: 2}
+  - {fileID: 11400000, guid: 119bf6a7580e37348b467b740be92697, type: 2}
+  - {fileID: 11400000, guid: 3d9a67272ddb2ce43a8f055a8d337810, type: 2}
+  - {fileID: 11400000, guid: b161afd0743aa81449c402a096282cda, type: 2}
+  dialogue: "Good -- {yawn} Sorry. Good morning detective. My name's Tim, but everyone
+    calls me Sleepy Tim./n I'm sorry for my appearance, but I've been woken up enough
+    times this morning.\nI was home all of yesterday. I decided to get to bed at
+    6PM.\nI got woken up by some loud noises at 10:30PM. Saw two cars outside so
+    I figured it must be Joe back from work. He usually gets back around that time.
+    So I went out to have a go at whoever it was for causing a ruckus so late.\nWent
+    outside and saw Joe from room three, I figured it must've been him, since he
+    usually get's back around that time. Usually a bit earlier though, more like
+    10:00PM.\nThere's only one thing that I don't get. Everyone's saying Fred's been
+    off on holidays, but I heard him break two of his pots yesterday morning, just
+    one after the other.\n  And now if you'll excuse me detective, I've got some
+    sleep to catch up on. Try to keep it down, will you?"
+  speakerSprite: {fileID: 0}

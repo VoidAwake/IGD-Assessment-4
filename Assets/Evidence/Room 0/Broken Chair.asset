@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Broken Chair
   m_EditorClassIdentifier: 
-  description: 
   descriptions:
   - Broken chair in the victim's room.
-  dialogue: 'While the room shows no signs of a struggle or break-in, there is a
-    broken chair.\nIt appears to have broken under too much weight.'
+  evidencePieces:
+  - {fileID: 11400000, guid: 1f297eb0b8e113e41996a9745de8237b, type: 2}
+  dialogue: While the room shows no signs of a struggle or break-in, there is a broken
+    chair.\nIt appears to have broken under too much weight.
   speakerSprite: {fileID: 0}

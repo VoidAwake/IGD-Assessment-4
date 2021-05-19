@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Inspection
+  m_Name: Bed
   m_EditorClassIdentifier: 
-  description: 
   descriptions:
   - State of (2)'s room
+  evidencePieces:
+  - {fileID: 11400000, guid: e6ede46ef7f05f3489d7479767cd48e0, type: 2}
   dialogue: 'Seems like there''s nothing of note in here.
 
     The bedsheets are
