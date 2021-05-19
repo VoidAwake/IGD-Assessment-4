@@ -25,9 +25,9 @@ public class ClickItem : MonoBehaviour
             {
                 selectedObject = hit.collider.gameObject;
                 Debug.Log(selectedObject.name);
-                Video.timeScale = (selectedObject.CompareTag("Play")) ? 1.0f :
+                Video.timeScale = (selectedObject.CompareTag("Play")) ? (Video.timeScale == 1.0f) ? 3.0f : 1.0f :
                     selectedObject.CompareTag("Pause") ? 0.0f :
-                    selectedObject.CompareTag("Rewind") ? -1.0f :
+                    selectedObject.CompareTag("Rewind") ? (Video.timeScale == -1.0f) ? -3.0f : -1.0f :
                     Video.timeScale;
             }
         }

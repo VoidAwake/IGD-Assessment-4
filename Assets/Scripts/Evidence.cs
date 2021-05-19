@@ -6,7 +6,7 @@ namespace DefaultNamespace
     [CreateAssetMenu]
     public class Evidence : ScriptableObject
     {
-        public List<EvidencePiece> evidencePieces;
+        public List<string> descriptions;
         [TextArea] public string dialogue;
         public Sprite speakerSprite;
     }
