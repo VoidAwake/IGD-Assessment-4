@@ -7,17 +7,23 @@ public abstract class Interactable : MonoBehaviour
 {
     [HideInInspector]public bool playerInRange = false;
     private ContextClue CC;
+    protected DialogueManager DM;
 
 	protected virtual void Start()
 	{
         CC = FindObjectOfType<ContextClue>();
+        DM = FindObjectOfType<DialogueManager>();
+
     }
 
 	private void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
-            Interact();
+            if (!DM.isInteracting)
+            {
+                Interact();
+            }
         }
     }
 

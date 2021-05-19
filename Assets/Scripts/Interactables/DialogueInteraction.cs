@@ -13,7 +13,7 @@ public class DialogueInteraction : Interactable
 	 * Read Dialogue Manager Readme.
 	 * 
 	 */
-	private DialogueManager DM;
+	
 
 	private NotebookController notebook;
 
@@ -25,19 +25,15 @@ public class DialogueInteraction : Interactable
 	{
 		base.Start();
 		
-		DM = FindObjectOfType<DialogueManager>();
 		notebook = FindObjectOfType<NotebookController>();
 	}
 
 	protected override void Interact() {
-		if (!DM.dialogActive)
-		{
-			//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
-			//	script within the GameObjectand passes it through the Dialogue Manager.
-			string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
-			DM.ShowDialogue(sentences, evidence.speakerSprite);
-			notebook.AddEvidence(evidence);
-			DM.isInteracting = true; ;
-		}
+		//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
+		//	script within the GameObjectand passes it through the Dialogue Manager.
+		string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
+		DM.ShowDialogue(sentences, evidence.speakerSprite);
+		notebook.AddEvidence(evidence);
+		DM.isInteracting = true;
 	}
 }
