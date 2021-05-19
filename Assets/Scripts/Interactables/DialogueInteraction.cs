@@ -17,12 +17,14 @@ public class DialogueInteraction : Interactable
 
 	private NotebookController notebook;
 
-	[SerializeField] private Evidence evidence;
+	[SerializeField] protected Evidence evidence;
 
 	protected bool isInteracting;
 
-	private void Start()
+	protected override void Start()
 	{
+		base.Start();
+		
 		DM = FindObjectOfType<DialogueManager>();
 		notebook = FindObjectOfType<NotebookController>();
 	}

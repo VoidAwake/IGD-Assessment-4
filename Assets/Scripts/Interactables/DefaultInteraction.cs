@@ -4,9 +4,14 @@ namespace DefaultNamespace
     {
         protected override void Start()
         {
-            base.Start();
-            
-            Interact();
+            if (!PersistentData.TutorialDialogues.Contains(evidence))
+            {
+                base.Start();
+
+                Interact();
+                
+                PersistentData.TutorialDialogues.Add((evidence));
+            }
         }
     }
 }

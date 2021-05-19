@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 	private int index;
 	private string[] dialogSentences;
 
-	private void Start()
+	private void Awake()
 	{
 		ContinueBtn.SetActive(false);
 		textComponent.text = string.Empty;
