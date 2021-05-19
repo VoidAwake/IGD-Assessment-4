@@ -9,6 +9,7 @@ namespace DefaultNamespace
 
         protected override void Interact()
         {
+            PlayerPrefs.SetInt("PrevLevel", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(sceneBuildIndex);
 
             // Debug.Log(PersistentData.LastPosition);

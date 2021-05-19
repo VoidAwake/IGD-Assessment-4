@@ -5,11 +5,17 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    protected bool playerInRange = false;
+    [HideInInspector]public bool playerInRange = false;
+    private ContextClue CC;
 
-    private void Update()
+	private void Start()
+	{
+        CC = FindObjectOfType<ContextClue>();
+    }
+
+	private void Update()
     {
-        if (playerInRange && Input.GetKeyUp(KeyCode.F))
+        if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             Interact();
         }
@@ -25,6 +31,7 @@ public abstract class Interactable : MonoBehaviour
         {
             Debug.Log("In Range");
             playerInRange = true;
+            //CC.promptClue = playerInRange;
         }
     }
 
@@ -34,6 +41,7 @@ public abstract class Interactable : MonoBehaviour
         {
             Debug.Log("Out of Range");
             playerInRange = false;
+            //CC.promptClue = playerInRange;
         }
     }
 }

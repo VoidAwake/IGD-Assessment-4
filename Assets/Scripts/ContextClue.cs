@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ContextClue : MonoBehaviour
 {
-	private ItemInteraction II;
+	private Interactable item;
 	public bool promptClue;
 	public GameObject contextClue;
-	
+	//Edit.
 	// Start is called before the first frame update
 	public void Start()
 	{
 		contextClue.SetActive(false);
-		II = FindObjectOfType<ItemInteraction>();
+		item = FindObjectOfType<Interactable>();
 	}
 
 	private void Update()
