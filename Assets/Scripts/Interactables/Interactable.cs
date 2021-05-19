@@ -8,7 +8,7 @@ public abstract class Interactable : MonoBehaviour
     [HideInInspector]public bool playerInRange = false;
     private ContextClue CC;
 
-	private void Start()
+	protected virtual void Start()
 	{
         CC = FindObjectOfType<ContextClue>();
     }
