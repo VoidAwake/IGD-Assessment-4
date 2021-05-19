@@ -13,12 +13,12 @@ public class NotebookController : MonoBehaviour
     private bool notebookOpen = false;
 
     private List<GameObject> evidenceTexts = new List<GameObject>();
+
+    private List<Evidence> selectedEvidence = new List<Evidence>();
     
     void Start()
     {
         mainPanel.SetActive(false);
-
-        Debug.Log(PersistentData.FoundEvidence.Count);
 
         foreach (var evidence in PersistentData.FoundEvidence)
         {
@@ -65,5 +65,30 @@ public class NotebookController : MonoBehaviour
 
             newEvidenceText.GetComponent<Text>().text = description;
         }
+    }
+
+    public void SelectEvidence (Evidence evidence) {
+        if (selectedEvidence.Contains(evidence)) return;
+
+        // ChangeColor
+
+        if (selectedEvidence == null) {
+            selectedEvidence = evidence;
+        } else {
+            CheckConnection(evidence, selectedEvidence);
+
+            selectedEvidence = null;
+
+            // ChangeColor
+        }
+    }
+
+    public void CheckConnection (Evidence evidence1, Evidence evidence2) {
+        // foreach (var connection in connections) {
+           // if (connection.components.Contains(evidence1) && connection.components.Contains(evidence2)) {
+               // AddEvidence(connection.evidence);
+               //break;
+           // }
+       // }
     }
 }

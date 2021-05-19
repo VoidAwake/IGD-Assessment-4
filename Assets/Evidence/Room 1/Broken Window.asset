@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   descriptions:
-  - Broken window in (1)'s room
-  dialogue: 'The window here is broken.
-
-    This is very suspicious, what could''ve
-    broken it?'
+  - There is a broken window in room one.
+  dialogue: 'The window has been broken.'
   speakerSprite: {fileID: 0}

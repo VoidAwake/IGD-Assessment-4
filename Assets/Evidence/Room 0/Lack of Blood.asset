@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   descriptions:
-  - Lack of blood
-  dialogue: 'There is a lack of blood at the scene of the crime.
-
-    That''s odd
-    considering the victim was covered in bruises.
-
-    The blood can''t have disappeared
-    by itself.'
+  - No blood found in the victim's room.
+  dialogue: "There is a lack of blood at the scene of the crime.\n
+    That's odd considering the victim was covered in bruises.\n
+    The blood can't have disappeared by itself."
   speakerSprite: {fileID: 0}

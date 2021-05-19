@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Broken Flowerpot
+  m_Name: Broken Pot and Window
   m_EditorClassIdentifier: 
-  description: 
   descriptions:
-  - Broken flowerpot found in (1)'s room
-  dialogue: 'There is a flowerpot on the ground presumable from the hanging decors
-    on the ceiling.
+  - Broken flowerpot in room one.
+  - Broken window in room one.
+  dialogue: 'There''s a broken flowerpot on the ground presumably from the hanging
+    decors on the ceiling.
 
-    Odd, there''s no rope to match this flowerpot.
+    The rope that held it appears to be missing.
 
-    Where
-    could it have gone?'
+    The
+    window has also been broken.'
   speakerSprite: {fileID: 0}

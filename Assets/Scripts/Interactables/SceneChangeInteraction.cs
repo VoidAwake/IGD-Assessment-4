@@ -10,6 +10,12 @@ namespace DefaultNamespace
         protected override void Interact()
         {
             SceneManager.LoadScene(sceneBuildIndex);
+
+            // Debug.Log(PersistentData.LastPosition);
+
+            // PersistentData.LastPosition = transform;
+
+            // Debug.Log(PersistentData.LastPosition);
         }
     }
 }

@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   descriptions:
-  - Plant decor in (1)'s room
-  dialogue: 'There are some plant''s hanging around as decoration.
+  - The victim was strangled with ropes from room one.
+  dialogue: "There are some plant's hanging around as decoration.
 
-    ...
-
-    These
-    ropes match the ones found in the victim''s room!'
+    The ropes that hold the plants are the same ropes that were used to strangle the victim."
   speakerSprite: {fileID: 0}

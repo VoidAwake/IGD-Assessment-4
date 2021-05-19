@@ -16,8 +16,5 @@ MonoBehaviour:
   descriptions:
   - Broken chair in the victim's room.
   dialogue: 'While the room shows no signs of a struggle or break-in, there is a
-    broken chair.
-
-
-    It appears to have broken under too much weight.'
+    broken chair.\nIt appears to have broken under too much weight.'
   speakerSprite: {fileID: 0}

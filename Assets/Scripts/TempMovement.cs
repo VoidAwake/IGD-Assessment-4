@@ -18,6 +18,12 @@ public class TempMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
+
+        // Set player position from PersistentData
+        // if (!PersistentData.LastPosition) {
+            // Debug.Log("found old position");
+            // transform.position = PersistentData.LastPosition.position;
+        // }
     }
 
     // Update is called once per frame
