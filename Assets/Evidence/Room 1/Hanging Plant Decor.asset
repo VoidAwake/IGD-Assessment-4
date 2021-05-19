@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Hanging Plant Decor
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - The victim was strangled with ropes from room one.
-  dialogue: "There are some plant's hanging around as decoration.
+  descriptions: []
+  dialogue: 'There are some plant''s hanging around as decoration.
 
-    The ropes that hold the plants are the same ropes that were used to strangle the victim."
+    The ropes
+    that hold the plants are the same ropes that were used to strangle the victim.'
   speakerSprite: {fileID: 0}

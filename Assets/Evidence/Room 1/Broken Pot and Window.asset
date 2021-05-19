@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Broken Pot and Window
   m_EditorClassIdentifier: 
-  descriptions:
-  - Broken flowerpot in room one.
-  - Broken window in room one.
+  descriptions: []
   dialogue: 'There''s a broken flowerpot on the ground presumably from the hanging
     decors on the ceiling.
 
