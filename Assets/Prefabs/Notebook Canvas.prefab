@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainPanel: {fileID: 292902313870644727}
-  evidenceText: {fileID: 7217916653090473800, guid: db69280c0eb20324bbb52ac29a4e8b5d, type: 3}
+  evidencePieceText: {fileID: 7217916653090473800, guid: db69280c0eb20324bbb52ac29a4e8b5d, type: 3}
   textPadding: {x: 30, y: -30}
   verticalTextOffset: 20
 --- !u!1 &292902313870644727
