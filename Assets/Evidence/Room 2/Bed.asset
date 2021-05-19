@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Alibi Part 1
+  m_Name: Bed
   m_EditorClassIdentifier: 
-  description: 
   descriptions:
-  - (2)'s Alibi
-  dialogue: '(2) says he was home the entire day and was sleeping from 6PM - 10:30PM.
+  - State of (2)'s room
+  evidencePieces:
+  - {fileID: 11400000, guid: e6ede46ef7f05f3489d7479767cd48e0, type: 2}
+  dialogue: 'Seems like there''s nothing of note in here.
 
-    They
-    heard the sound of a car nearby right before they fell asleep.'
+    The bedsheets are
+    rumpled showing signs that the bed has been slept in.'
   speakerSprite: {fileID: 0}
