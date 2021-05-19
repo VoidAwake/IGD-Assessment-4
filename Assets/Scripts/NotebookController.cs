@@ -14,7 +14,7 @@ public class NotebookController : MonoBehaviour
 
     private List<GameObject> evidenceTexts = new List<GameObject>();
 
-    private List<Evidence> selectedEvidence = new List<Evidence>();
+    // private List<Evidence> selectedEvidence = new List<Evidence>();
     
     void Start()
     {
@@ -67,28 +67,28 @@ public class NotebookController : MonoBehaviour
         }
     }
 
-    public void SelectEvidence (Evidence evidence) {
-        if (selectedEvidence.Contains(evidence)) return;
-
-        // ChangeColor
-
-        if (selectedEvidence == null) {
-            selectedEvidence = evidence;
-        } else {
-            CheckConnection(evidence, selectedEvidence);
-
-            selectedEvidence = null;
-
-            // ChangeColor
-        }
-    }
-
-    public void CheckConnection (Evidence evidence1, Evidence evidence2) {
-        // foreach (var connection in connections) {
-           // if (connection.components.Contains(evidence1) && connection.components.Contains(evidence2)) {
-               // AddEvidence(connection.evidence);
-               //break;
-           // }
-       // }
-    }
+    // public void SelectEvidence (Evidence evidence) {
+    //     if (selectedEvidence.Contains(evidence)) return;
+    //
+    //     // ChangeColor
+    //
+    //     if (selectedEvidence == null) {
+    //         selectedEvidence = evidence;
+    //     } else {
+    //         CheckConnection(evidence, selectedEvidence);
+    //
+    //         selectedEvidence = null;
+    //
+    //         // ChangeColor
+    //     }
+    // }
+    //
+    // public void CheckConnection (Evidence evidence1, Evidence evidence2) {
+    //     // foreach (var connection in connections) {
+    //        // if (connection.components.Contains(evidence1) && connection.components.Contains(evidence2)) {
+    //            // AddEvidence(connection.evidence);
+    //            //break;
+    //        // }
+    //    // }
+    // }
 }
