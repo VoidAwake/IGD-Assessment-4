@@ -7,6 +7,7 @@ using DG.Tweening;
 public class NotebookController : MonoBehaviour
 {
     [SerializeField] private GameObject mainPanel;
+    [SerializeField] private GameObject gridLayout;
     [SerializeField] private GameObject evidencePieceText;
     [SerializeField] private Vector2 textPadding;
     [SerializeField] private float verticalTextOffset;
@@ -74,7 +75,7 @@ public class NotebookController : MonoBehaviour
             Quaternion.identity
         );
 
-        newEvidenceText.transform.SetParent(mainPanel.transform, false);
+        newEvidenceText.transform.SetParent(gridLayout.transform, false);
             
         evidencePieceTexts.Add(evidencePiece, newEvidenceText);
 
