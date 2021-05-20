@@ -9,7 +9,7 @@ public class LockPick : MonoBehaviour
     public Transform pickPosition;
 
     public float maxAngle = 90;
-    public float lockSpeed = 10;
+    public float lockSpeed = 5;
 
     [Range(1,25)]
     public float lockRange = 10;
@@ -34,12 +34,12 @@ public class LockPick : MonoBehaviour
 
 		if (movePick)
 		{
-            Vector3 dir = Input.mousePosition - cam.WorldToScreenPoint(transform.position);
+            Vector3 dir = Input.mousePosition -cam.WorldToScreenPoint(transform.position);
 
-            eulerAngle = Vector3.Angle(dir, Vector3.up);
+            eulerAngle = Vector3.Angle(dir, new Vector3(0,1,0));
 
             Vector3 cross = Vector3.Cross(Vector3.up, dir);
-            if (cross.z < 0)
+            if (cross.z < 1)
 			{
                 eulerAngle = -eulerAngle;
 			}
@@ -49,38 +49,38 @@ public class LockPick : MonoBehaviour
             Quaternion rotateTo = Quaternion.AngleAxis(eulerAngle, Vector3.forward);
             transform.rotation = rotateTo;
 		}
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetMouseButtonDown(0))
 		{
             movePick = false;
             keyPressTime = 1;
 		}
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetMouseButtonUp(0))
 		{
             movePick = true;
             keyPressTime = 0;
 		}
 
-        //keyPressTime = Mathf.Clamp(keyPressTime, 0, 1);
-
-        float percentage = Mathf.Round(100 - Mathf.Abs(((eulerAngle - unlockAngle) / 100) * 100));
+        //The Turn angle of the inner lock. If it matches the 90 degrees.
+		float percentage = Mathf.Round(100 - Mathf.Abs(((eulerAngle - unlockAngle) / 100) * 100));
         float lockRotation = ((percentage / 100) * maxAngle) * keyPressTime;
         float maxRotation = (percentage / 100) * maxAngle;
 
-        float lockLerp = Mathf.Lerp(innerLock.eulerAngles.z, lockRotation, Time.deltaTime * lockSpeed);
+        float lockLerp = Mathf.Lerp(innerLock.eulerAngles.z, lockRotation, lockSpeed *Time.deltaTime);
         innerLock.eulerAngles = new Vector3(0, 0, lockLerp);
 
-        if (lockLerp >= maxRotation - 1)
+        if (lockLerp >= maxRotation -1)
 		{
             if (eulerAngle < unlockRange.y && eulerAngle > unlockRange.x)
 			{
+                //Does something once it unlocks.
                 Debug.Log("It Unlocks");
-                newLock();
 
                 movePick = true;
                 keyPressTime = 0;
 			}
 			else
 			{
+                //The Pin will Shake if incorrect.
                 float randomRotation = Random.insideUnitCircle.x;
                 transform.eulerAngles += new Vector3(0, 0, Random.Range(-randomRotation, randomRotation));
 			}
@@ -89,6 +89,7 @@ public class LockPick : MonoBehaviour
 
     void newLock()
 	{
+        //Ensure the unlocking angle is larger than the lock range.
         unlockAngle = Random.Range(-maxAngle + lockRange, maxAngle - lockRange);
         unlockRange = new Vector2(unlockAngle - lockRange, unlockAngle + lockRange);
     }
