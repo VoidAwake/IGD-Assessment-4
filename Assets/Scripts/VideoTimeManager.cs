@@ -16,7 +16,7 @@ public class VideoTimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time = Video.playTime * 10 + 660;
+        time = Video.playTime * 10 + 650;
         timeText.text = TimeFormat(time);
         //Debug.Log(TimeFormat(time));
     }
@@ -24,6 +24,6 @@ public class VideoTimeManager : MonoBehaviour
     {
         int hours = (int)time / 60;
         int minutes = (int)time % 60;
-        return (string.Format("{0:00}:{1:00}", hours, minutes) + ((time < 720) ? "AM" : "PM"));
+        return (string.Format("{0:00}:{1:00}", (time > 780)? hours - 12 : hours, minutes) + ((time < 720) ? "AM" : "PM"));
     }
 }

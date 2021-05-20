@@ -6,10 +6,10 @@ public class Video : MonoBehaviour
 {
     [SerializeField] private Animator animator;
 
-    private float deltaTime;
+    public static float deltaTime;
     public static float timeScale = 1.0f;
     public static float playTime = 0;
-    private float endTime = 13;
+    private float endTime = 55;
 
     private bool walking;
 
@@ -19,7 +19,7 @@ public class Video : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = new Vector3(-5, -0.5f, 0);
+        gameObject.transform.position = new Vector3(0, -0.5f, 0);
         faceRightScale = transform.localScale;
         faceLeftScale = new Vector3(
             transform.localScale.x * -1,
@@ -31,31 +31,42 @@ public class Video : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        WalkAnimation();
         deltaTime = Time.deltaTime * timeScale;
         playTime += deltaTime;
-
-        animator.enabled = (timeScale != 0) ? true : false;
-        animator.SetTrigger((timeScale > 0) ? "Walk" : "Reverse");
-        animator.SetTrigger((walking) ? ((timeScale > 0) ? "Walk" : "Reverse") : "Idle");
-
         timeScale = ((timeScale < 0 && playTime <= 0) || (timeScale > 0 && playTime >= endTime)) ? 0 : timeScale; //Pause video if it reaches start/end
 
-        if (playTime > 0 && playTime < 4) //Walking to the office
+        animator.enabled = (timeScale != 0) ? true : false;
+        animator.SetTrigger((walking) ? ((timeScale > 0) ? "Walk" : "Reverse") : "Idle");
+
+        if (playTime > 1 && playTime < 2.1f || // Walk Right
+            playTime > 17.1f && playTime < 21.1f ||
+            playTime > 39 && playTime < 42 ||
+            playTime > 47 && playTime < 50)
         {
             walking = true;
             gameObject.transform.localScale = faceRightScale;
             gameObject.transform.position += new Vector3(2.5f, 0, 0) * deltaTime;
         }
-        else if (playTime > 6 && playTime < 10) //Walking away from the office
+        if (playTime > 2.1f && playTime < 7.1f || // Idle
+            playTime > 21.1f && playTime < 43 || 
+            playTime > 42 && playTime < 44 ||
+            playTime > 50 && playTime < 51)
+        {
+            walking = false;
+        }
+        if (playTime > 7.1f && playTime < 11.1f || // Walk Left
+            playTime > 33 && playTime < 37 ||
+            playTime > 44 && playTime < 47)
         {
             walking = true;
             gameObject.transform.localScale = faceLeftScale;
             gameObject.transform.position += new Vector3(-2.5f, 0, 0) * deltaTime;
         }
 
-        if ((playTime > 4 && playTime < 6) || //Off screen times
-            (playTime > 12))
+        if (playTime > -0.1f && playTime < 1 || // Off screen times
+            playTime > 11.1f && playTime < 17.1f ||
+            playTime > 37 && playTime < 39 ||
+            playTime > 51)
         {
             gameObject.GetComponent<Renderer>().enabled = false;
         }
