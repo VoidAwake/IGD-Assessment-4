@@ -19,7 +19,7 @@ public class DialogueInteraction : Interactable
 
 	[SerializeField] public Evidence evidence;
 
-	protected bool isInteracting;
+	public bool isInteracting;
 
 	protected override void Start()
 	{

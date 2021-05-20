@@ -37,17 +37,27 @@ public abstract class Interactable : MonoBehaviour
         {
             // Debug.Log("In Range");
             playerInRange = true;
-            //CC.promptClue = playerInRange;
+            CC.promptClue = playerInRange;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Staying Range");
+            playerInRange = true;
+            CC.promptClue = playerInRange;
+        }
+    }
+
+	private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             // Debug.Log("Out of Range");
             playerInRange = false;
-            //CC.promptClue = playerInRange;
+            CC.promptClue = playerInRange;
         }
     }
 }
