@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
@@ -7,7 +8,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private int sceneBuildIndex;
 
-        protected override void Interact()
+        public override void Interact()
         {
             PlayerPrefs.SetInt("PrevLevel", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(sceneBuildIndex);

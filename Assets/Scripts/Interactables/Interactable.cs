@@ -27,7 +27,7 @@ public abstract class Interactable : MonoBehaviour
         }
     }
 
-    protected virtual void Interact() {}
+    public virtual void Interact() {}
     
     //Two Collider2D Functions to trigger the Boolean when Entering and Existing.
     //triggered Bool Used within Update().
