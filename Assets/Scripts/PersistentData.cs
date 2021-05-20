@@ -9,4 +9,6 @@ public static class PersistentData
     public static Transform LastPosition { get; set; }
 
     public static List<Evidence> TutorialDialogues { get; } = new List<Evidence>();
+
+    public static List<int> OpenedScenes { get; } = new List<int>();
 }

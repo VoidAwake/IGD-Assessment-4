@@ -4,7 +4,7 @@ namespace DefaultNamespace
 {
     public class ExitGameInteraction : Interactable
     {
-        protected override void Interact()
+        public override void Interact()
         {
             Application.Quit();
         }
