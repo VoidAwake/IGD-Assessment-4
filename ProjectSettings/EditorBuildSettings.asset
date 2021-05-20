@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: 933f9a0beed9baf44ae470f7a77c2e18
   - enabled: 1
     path: Assets/Scenes/Room 3.unity
-    guid: be1c7d3db26132e40a68754b3105b0ee
+    guid: 9d4d895a671ebae4ca35b39f5ec91f77
   - enabled: 1
     path: Assets/Scenes/Room 4.unity
     guid: c2d2089704cc04248ae43aa86e063dea
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: ee37965e0b1809e4eb863da9482a6a43
+  - enabled: 1
+    path: Assets/Scenes/Video Test.unity
+    guid: c4f33e5d19a9bb346a2ef10a660a97c8
   m_configObjects: {}
