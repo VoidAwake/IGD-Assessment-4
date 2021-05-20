@@ -12,7 +12,7 @@ public class ContextClue : MonoBehaviour
 	// Start is called before the first frame update
 	public void Start()
 	{
-		contextClue.SetActive(true);
+		contextClue.SetActive(false);
 	}
 
 	private void Update()
