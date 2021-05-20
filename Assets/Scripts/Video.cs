@@ -79,7 +79,7 @@ public class Video : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().enabled = true;
         }
-        Debug.Log(walking);
+        Debug.Log(playTime);
     }
     private void WalkAnimation()
     {
