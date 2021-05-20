@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Wallet
+  m_Name: (3)'s Alibi
   m_EditorClassIdentifier: 
-  descriptions:
-  - Wallet found in (3)'s room
-  dialogue: 'There''s a wallet inside here.
+  descriptions: []
+  dialogue: '(4) drove me to work in the morning.
 
-    Seems pretty standard.
+    When I got home at around
+    10:30PM I saw (2) looking around in the hallway.
 
-    There
-    are some spare bills inside and (3) driver''s license.'
-  speakerSprite: {fileID: 0}
+    I then went to sleep so
+    i don''t know when (1) and (4) returned from the airport.'
+  speakerSprite: {fileID: -7276268087962817574, guid: c4d07a7b95ef20a4f8aa98e6a85b727c, type: 3}
