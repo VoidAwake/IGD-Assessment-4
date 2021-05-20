@@ -19,7 +19,7 @@ public class Video : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = new Vector3(0, -0.5f, 0);
+        gameObject.transform.position = new Vector3(0, -0.3f, 0);
         faceRightScale = transform.localScale;
         faceLeftScale = new Vector3(
             transform.localScale.x * -1,
@@ -34,6 +34,11 @@ public class Video : MonoBehaviour
         deltaTime = Time.deltaTime * timeScale;
         playTime += deltaTime;
         timeScale = ((timeScale < 0 && playTime <= 0) || (timeScale > 0 && playTime >= endTime)) ? 0 : timeScale; //Pause video if it reaches start/end
+
+        if (playTime >= endTime)
+        {
+            //DO SOMETHING ONCE VIDEO ENDS
+        }
 
         animator.enabled = (timeScale != 0) ? true : false;
         animator.SetTrigger((walking) ? ((timeScale > 0) ? "Walk" : "Reverse") : "Idle");
@@ -74,6 +79,7 @@ public class Video : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().enabled = true;
         }
+        Debug.Log(walking);
     }
     private void WalkAnimation()
     {

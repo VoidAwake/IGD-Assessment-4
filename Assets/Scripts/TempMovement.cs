@@ -36,6 +36,9 @@ public class TempMovement : MonoBehaviour
             case 5:
                 transform.position = new Vector3(3.6f, -0.3f);
                 break;
+            case 6:
+                transform.position = new Vector3(3, -0.3f);
+                break;
             default:
                 transform.position = new Vector3(0, -0.3f);
                 break;

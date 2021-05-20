@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickItem : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class ClickItem : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(Time.timeScale);
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //convert clicked location to screen coordinates
@@ -24,11 +24,15 @@ public class ClickItem : MonoBehaviour
             if (hit.collider != null) //if something was detected
             {
                 selectedObject = hit.collider.gameObject;
-                Debug.Log(selectedObject.name);
                 Video.timeScale = (selectedObject.CompareTag("Play")) ? (Video.timeScale == 1.0f) ? 3.0f : 1.0f :
                     selectedObject.CompareTag("Pause") ? 0.0f :
                     selectedObject.CompareTag("Rewind") ? (Video.timeScale == -1.0f) ? -3.0f : -1.0f :
                     Video.timeScale;
+                if (selectedObject.CompareTag("Exit"))
+                {
+                    PlayerPrefs.SetInt("PrevLevel", SceneManager.GetActiveScene().buildIndex);
+                    SceneManager.LoadScene(4);
+                }
             }
         }
     }
