@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickItem : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class ClickItem : MonoBehaviour
                     selectedObject.CompareTag("Pause") ? 0.0f :
                     selectedObject.CompareTag("Rewind") ? -1.0f :
                     Video.timeScale;
+                if (selectedObject.CompareTag("Exit"))
+                {
+                    PlayerPrefs.SetInt("PrevLevel", SceneManager.GetActiveScene().buildIndex);
+                    SceneManager.LoadScene(4);
+                }
             }
         }
     }

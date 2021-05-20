@@ -26,22 +26,25 @@ public class TempMovement : MonoBehaviour
                 transform.position = new Vector3(0.25f, -0.3f);
                 break;
             case 1:
-                transform.position = new Vector3(-2.0f, -0.3f);
+                transform.position = new Vector3(-3.25f, -0.3f);
                 break;
             case 2:
-                transform.position = new Vector3(-0.6f, -0.3f);
+                transform.position = new Vector3(-1.85f, -0.3f);
                 break;
             case 3:
-                transform.position = new Vector3(0, -0.3f);
+                transform.position = new Vector3(-0.45f, -0.3f);
                 break;
             case 4:
-                transform.position = new Vector3(0, -0.3f);
+                transform.position = new Vector3(1.05f, -0.3f);
                 break;
             case 5:
-                transform.position = new Vector3(0, -0.3f);
+                transform.position = new Vector3(2.45f, -0.3f);
+                break;
+            case 8:
+                transform.position = new Vector3(3.2f, -0.3f);
                 break;
             default:
-                transform.position = new Vector3(0, -0.3f);
+                transform.position = new Vector3(-3, -0.3f);
                 break;
         }
         DM = FindObjectOfType<DialogueManager>();
@@ -103,7 +106,7 @@ public class TempMovement : MonoBehaviour
 		if (collision.CompareTag("Door"))
 		{
             isDoor = true;
-            // Debug.Log("On Ladder");
+            Debug.Log("On Ladder");
 		}
 
 	}
@@ -112,7 +115,7 @@ public class TempMovement : MonoBehaviour
     {
         if (collision.CompareTag("Door"))
         {
-            // Debug.Log("Off Ladder");
+            Debug.Log("Off Ladder");
             isDoor = false;
         }
 
