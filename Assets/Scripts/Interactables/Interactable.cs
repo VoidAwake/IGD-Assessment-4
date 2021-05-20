@@ -27,7 +27,7 @@ public abstract class Interactable : MonoBehaviour
         }
     }
 
-    protected virtual void Interact() {}
+    public virtual void Interact() {}
     
     //Two Collider2D Functions to trigger the Boolean when Entering and Existing.
     //triggered Bool Used within Update().
@@ -35,7 +35,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("In Range");
+            // Debug.Log("In Range");
             playerInRange = true;
             CC.promptClue = playerInRange;
         }
@@ -55,7 +55,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Out of Range");
+            // Debug.Log("Out of Range");
             playerInRange = false;
             CC.promptClue = playerInRange;
         }

@@ -17,7 +17,7 @@ public class DialogueInteraction : Interactable
 
 	private NotebookController notebook;
 
-	[SerializeField] protected Evidence evidence;
+	[SerializeField] public Evidence evidence;
 
 	public bool isInteracting;
 
@@ -28,13 +28,12 @@ public class DialogueInteraction : Interactable
 		notebook = FindObjectOfType<NotebookController>();
 	}
 
-	protected override void Interact() {
+	public override void Interact() {
 		//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 		//	script within the GameObjectand passes it through the Dialogue Manager.
 		string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
 		DM.ShowDialogue(sentences, evidence.speakerSprite);
 		notebook.AddEvidence(evidence);
 		DM.isInteracting = true;
-		Debug.Log("new interaction");
 	}
 }
