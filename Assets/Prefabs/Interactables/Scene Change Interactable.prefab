@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4812613747931603225}
   m_Layer: 0
   m_Name: Scene Change Interactable
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a47aa43012412fbdd66fdb8d7da27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
   sceneBuildIndex: 0
 --- !u!61 &4812613747931603225
 BoxCollider2D:

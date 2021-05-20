@@ -11,9 +11,12 @@ public class TempMovement : MonoBehaviour
     public float ClimbingSpeed;
     public bool canMove;
     public bool isLadder;
+    public bool isDoor;
 
     Rigidbody2D rb;
-    public DialogueManager DM;
+    [HideInInspector]public DialogueManager DM;
+    public GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,10 +75,19 @@ public class TempMovement : MonoBehaviour
                 transform.position += new Vector3(0, Vmovement, 0) * Time.deltaTime * ClimbingSpeed;
             }
 
+            if (isDoor == false)
+			{
+                Player.GetComponent<ContextClue>().enabled = true;
+            }
+            else if (isDoor == true)
+			{
+                Player.GetComponent<ContextClue>().enabled = false;
+            }
+
             if (Math.Abs(movement) != 0) {
                 if (movement > 0) {
-                    //animation.WalkAnimation("right");
-                } else {
+					animation.WalkAnimation("right");
+				} else {
                     animation.WalkAnimation("left");
                 }
             } else {
@@ -88,19 +100,20 @@ public class TempMovement : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Ladder"))
+		if (collision.CompareTag("Door"))
 		{
+            isDoor = true;
             Debug.Log("On Ladder");
-            isLadder = true;
 		}
 
 	}
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        if (collision.CompareTag("Door"))
         {
             Debug.Log("Off Ladder");
-            isLadder = false;
+            isDoor = false;
         }
 
     }
