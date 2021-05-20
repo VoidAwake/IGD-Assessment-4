@@ -195,7 +195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8269757858291057601, guid: 3d7280e5a3f3dab4ab76af5f6aff7f14, type: 3}
+  m_Sprite: {fileID: 8269757858291057601, guid: 9b5bf9f5c1f440e438a0f14aad30f269, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 521.5, y: 30}
+  m_CellSize: {x: 360, y: 30}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
