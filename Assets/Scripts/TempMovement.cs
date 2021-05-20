@@ -86,7 +86,7 @@ public class TempMovement : MonoBehaviour
 
             if (Math.Abs(movement) != 0) {
                 if (movement > 0) {
-					animation.WalkAnimation("right");
+                    animation.WalkAnimation("right");
 				} else {
                     animation.WalkAnimation("left");
                 }

@@ -378,6 +378,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 656569036729276825, guid: d80d4a25f82949a469bb127ab3e287ff, type: 3}
+      propertyPath: popUP
+      value: 
+      objectReference: {fileID: 1406593804}
+    - target: {fileID: 656569036729276827, guid: d80d4a25f82949a469bb127ab3e287ff, type: 3}
+      propertyPath: popUP
+      value: 
+      objectReference: {fileID: 1406593804}
     - target: {fileID: 656569036729276827, guid: d80d4a25f82949a469bb127ab3e287ff, type: 3}
       propertyPath: Player
       value: 
@@ -623,7 +631,7 @@ SpriteRenderer:
   m_SortingLayerID: -476601029
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bb6aaf0da4cd0834592bf047ccf856e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1dbcea5d67ea9a4ab23546a8e080a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

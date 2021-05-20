@@ -7,7 +7,7 @@ public class ContextClue : MonoBehaviour
 	private DialogueInteraction DI;
 	public bool promptClue;
 	public GameObject contextClue;
-	public DialogueManager DM;
+	private DialogueManager DM;
 	//Edit.
 	// Start is called before the first frame update
 	public void Start()
