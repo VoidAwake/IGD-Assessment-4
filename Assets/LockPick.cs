@@ -39,7 +39,7 @@ public class LockPick : MonoBehaviour
             eulerAngle = Vector3.Angle(dir, new Vector3(0,1,0));
 
             Vector3 cross = Vector3.Cross(Vector3.up, dir);
-            if (cross.z < 1)
+            if (cross.z <= 0)
 			{
                 eulerAngle = -eulerAngle;
 			}
@@ -63,18 +63,18 @@ public class LockPick : MonoBehaviour
         //The Turn angle of the inner lock. If it matches the 90 degrees.
 		float percentage = Mathf.Round(100 - Mathf.Abs(((eulerAngle - unlockAngle) / 100) * 100));
         float lockRotation = ((percentage / 100) * maxAngle) * keyPressTime;
-        float maxRotation = (percentage / 100) * maxAngle;
+        float maxRotation = (percentage / 100) * maxAngle;  
 
-        float lockLerp = Mathf.Lerp(innerLock.eulerAngles.z, lockRotation, lockSpeed *Time.deltaTime);
+        //returns a float range of the min and max, with lockspeed * time.deltatime being the increments.
+        float lockLerp = Mathf.Lerp(innerLock.eulerAngles.z, lockRotation, lockSpeed * Time.deltaTime);
         innerLock.eulerAngles = new Vector3(0, 0, lockLerp);
 
-        if (lockLerp >= maxRotation -1)
+        if (lockLerp >= maxRotation - 1)
 		{
             if (eulerAngle < unlockRange.y && eulerAngle > unlockRange.x)
 			{
                 //Does something once it unlocks.
                 Debug.Log("It Unlocks");
-
                 movePick = true;
                 keyPressTime = 0;
 			}
