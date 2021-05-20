@@ -53,7 +53,7 @@ public class Video : MonoBehaviour
             gameObject.transform.position += new Vector3(2.5f, 0, 0) * deltaTime;
         }
         if (playTime > 2.1f && playTime < 7.1f || // Idle
-            playTime > 21.1f && playTime < 43 || 
+            playTime > 21.1f && playTime < 39 || 
             playTime > 42 && playTime < 44 ||
             playTime > 50 && playTime < 51)
         {
