@@ -103,7 +103,7 @@ public class TempMovement : MonoBehaviour
 		if (collision.CompareTag("Door"))
 		{
             isDoor = true;
-            Debug.Log("On Ladder");
+            // Debug.Log("On Ladder");
 		}
 
 	}
@@ -112,7 +112,7 @@ public class TempMovement : MonoBehaviour
     {
         if (collision.CompareTag("Door"))
         {
-            Debug.Log("Off Ladder");
+            // Debug.Log("Off Ladder");
             isDoor = false;
         }
 

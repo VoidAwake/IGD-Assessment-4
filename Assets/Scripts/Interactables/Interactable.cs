@@ -45,7 +45,7 @@ public abstract class Interactable : MonoBehaviour
 	{
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Staying Range");
+            // Debug.Log("Staying Range");
             playerInRange = true;
             CC.promptClue = playerInRange;
         }
