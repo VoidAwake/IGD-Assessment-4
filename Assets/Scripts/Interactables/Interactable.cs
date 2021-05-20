@@ -35,7 +35,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("In Range");
+            // Debug.Log("In Range");
             playerInRange = true;
             //CC.promptClue = playerInRange;
         }
@@ -45,7 +45,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Out of Range");
+            // Debug.Log("Out of Range");
             playerInRange = false;
             //CC.promptClue = playerInRange;
         }
