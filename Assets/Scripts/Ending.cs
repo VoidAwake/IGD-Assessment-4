@@ -14,7 +14,6 @@ public class Ending : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(PersistentData.OpenedScenes.Count);
         if (PersistentData.OpenedScenes.Count == numberOfScenes)
         {
             endingWall.SetActive(false);

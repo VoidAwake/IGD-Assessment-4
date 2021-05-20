@@ -29,7 +29,6 @@ public class DialogueInteraction : Interactable
 	}
 
 	public override void Interact() {
-		Debug.Log("new interaction");
 		//Calls the functions within DialogueManager, then Gets the Dialogue or Sentences of this
 		//	script within the GameObjectand passes it through the Dialogue Manager.
 		string[] sentences = evidence.dialogue.Split(new string[] { "\n" }, StringSplitOptions.None);
