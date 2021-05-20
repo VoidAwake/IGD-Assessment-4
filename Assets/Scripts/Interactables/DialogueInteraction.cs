@@ -17,7 +17,7 @@ public class DialogueInteraction : Interactable
 
 	private NotebookController notebook;
 
-	[SerializeField] protected Evidence evidence;
+	[SerializeField] public Evidence evidence;
 
 	protected bool isInteracting;
 
