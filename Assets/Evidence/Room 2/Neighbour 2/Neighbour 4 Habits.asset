@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6753f586e4b34f43b28b2ddc19805eb7, type: 3}
   m_Name: Neighbour 4 Habits
   m_EditorClassIdentifier: 
-  description: Tim said that Joe usually get's home at 10:00PM.
+  description: Tim said Joe usually gets home at 10:00PM.

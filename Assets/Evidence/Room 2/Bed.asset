@@ -16,8 +16,6 @@ MonoBehaviour:
   - State of (2)'s room
   evidencePieces:
   - {fileID: 11400000, guid: e6ede46ef7f05f3489d7479767cd48e0, type: 2}
-  dialogue: 'Seems like there''s nothing of note in here.
-
-    The bedsheets are
-    rumpled showing signs that the bed has been slept in.'
+  dialogue: 'The bedsheets are
+    rumpled showing that the bed has been slept in.'
   speakerSprite: {fileID: 0}

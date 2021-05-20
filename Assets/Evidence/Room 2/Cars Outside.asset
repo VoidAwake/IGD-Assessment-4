@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces:
   - {fileID: 11400000, guid: 119bf6a7580e37348b467b740be92697, type: 2}
-  dialogue: I can see the apartment's parking spaces from my window. Those two cars
-    have been there since 10:30PM when I got woken up.
+  dialogue: "I can see the apartment's parking spaces from my window.
+
+Those two cars have been there since 10:30PM when I got woken up."
   speakerSprite: {fileID: 21300000, guid: 6ca0d37a39479fe4ab080b1776d147c9, type: 3}
