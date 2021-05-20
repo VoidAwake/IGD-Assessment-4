@@ -47,9 +47,9 @@ MonoBehaviour:
   cam: {fileID: 0}
   innerLock: {fileID: 0}
   pickPosition: {fileID: 0}
-  maxAngle: 95
+  maxAngle: 90
   lockSpeed: 10
-  lockRange: 13.2
+  lockRange: 9
 --- !u!1 &2155986246075443452
 GameObject:
   m_ObjectHideFlags: 0

@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 1847397492}
     - target: {fileID: 2155986245305479109, guid: 8b92775d761369c47950f8000bcfe0d1, type: 3}
       propertyPath: lockRange
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2155986245305479109, guid: 8b92775d761369c47950f8000bcfe0d1, type: 3}
       propertyPath: lockSpeed
