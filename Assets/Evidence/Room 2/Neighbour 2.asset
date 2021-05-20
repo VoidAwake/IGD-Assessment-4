@@ -12,19 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Neighbour 2
   m_EditorClassIdentifier: 
-  descriptions:
-  - Tim heard someone drive away at 6PM.
-  - Tim heard someone break two pots in room one at 10:00AM.
-  - Tim was woken up by a loud commotion at 10:30PM. He went into the hallway and
-    saw Joe.
-  - Tim saw two cars outside at 10:30PM.
-  - Tim said that Joe usually get's home at 10:00PM.
-  - Tim said that he heard the sound of someone fainting at 12:50AM.
   evidencePieces:
   - {fileID: 11400000, guid: 34a3766a1ede9514388b3c121d259e35, type: 2}
   - {fileID: 11400000, guid: b8d6eec03c73cde449974497b34a56ba, type: 2}
   - {fileID: 11400000, guid: e3ee69a3f137de8478b4ff9bcb25bfb6, type: 2}
-  - {fileID: 11400000, guid: 119bf6a7580e37348b467b740be92697, type: 2}
   - {fileID: 11400000, guid: 3d9a67272ddb2ce43a8f055a8d337810, type: 2}
   - {fileID: 11400000, guid: b161afd0743aa81449c402a096282cda, type: 2}
   dialogue: "Good -- {yawn} Sorry. Good morning detective. My name's Tim, but everyone
@@ -39,4 +30,4 @@ MonoBehaviour:
     off on holidays, but I heard him break two of his pots yesterday morning, just
     one after the other.\n  And now if you'll excuse me detective, I've got some
     sleep to catch up on. Try to keep it down, will you?"
-  speakerSprite: {fileID: 0}
+  speakerSprite: {fileID: 21300000, guid: 6ca0d37a39479fe4ab080b1776d147c9, type: 3}
