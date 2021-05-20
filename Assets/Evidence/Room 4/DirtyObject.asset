@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Clock
+  m_Name: DirtyObject
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: 'It looks like it was deliberately smashed and dropped a few times.
-
-    (4)
-    says he accidentally dropped the clock last night.
-
-    There are no fingerprints
-    on the clock.'
+  dialogue: "Time to get hands on and see what's hiding under all of that grime...
+    \n[Click and hold with the mouse to wipe away at the object.]\n...\n...\nIt's
+    a clock- the broken face reads 8:30.\n[Exit to return to room.]"
   speakerSprite: {fileID: 0}
