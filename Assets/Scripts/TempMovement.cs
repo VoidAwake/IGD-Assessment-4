@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TempMovement : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class TempMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
         Debug.Log(PlayerPrefs.GetInt("PrevLevel"));
         switch(PlayerPrefs.GetInt("PrevLevel"))
         {
@@ -48,6 +50,7 @@ public class TempMovement : MonoBehaviour
             default:
                 transform.position = new Vector3(-4.2f, 0f);
                 break;
+        }
         }
         DM = FindObjectOfType<DialogueManager>();
         rb = GetComponent<Rigidbody2D>();
