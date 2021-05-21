@@ -21,4 +21,4 @@ MonoBehaviour:
 
     I then went to sleep so
     i don''t know when (1) and (4) returned from the airport.'
-  speakerSprite: {fileID: -7276268087962817574, guid: c4d07a7b95ef20a4f8aa98e6a85b727c, type: 3}
+  speakerSprite: {fileID: 21300000, guid: 9854552ad2d3baf48975987ba5cb8350, type: 3}

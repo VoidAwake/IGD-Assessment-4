@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Main Tutorial
   m_EditorClassIdentifier: 
-  descriptions: []
+  evidencePieces: []
   dialogue: 'There''s been a murder done.
 
-    Use [W] and [S] to move. Use [F] to
+    Use [A] and [D] to move. Use [F] to
     interact.'
   speakerSprite: {fileID: 0}
