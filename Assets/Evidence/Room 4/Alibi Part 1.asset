@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 1
   m_EditorClassIdentifier: 
-  evidencePieces: []
-  dialogue: '(4) says they drove (3) to work at 10AM and dropped them off at 12PM.
-
-    (4)
-    says they got home at 7PM.
-
-    (4) says that their car was the only one in the
-    parking lot and (2) was the only other person at home.'
+  evidencePieces:
+  - {fileID: 11400000, guid: 7f16b6dfc697f45459a4a92adb92edf1, type: 2}
+  - {fileID: 11400000, guid: 7b8ab7cc8f6f75b488baabaef1fd5025, type: 2}
+  - {fileID: 11400000, guid: 8f7e309f7c1d8f34da6cdc292d680866, type: 2}
+  - {fileID: 11400000, guid: 5e4754476a542344e9c1a4c6967092ad, type: 2}
+  dialogue: "Mornin' Detective. The name's Rob.\nI won't lie, it's been a long day
+    driving back and forth between errands.\nSo, I got up in the morning to drive
+    my pal Joe, down to work a bit after 10AM, he'd have gotten into the office at
+    around 12PM. \nTakes almost exactly 2 hours back and forth y'know, long drive.
+    \nI went to work directly after that and got home at 7:00PM, I think Tim was
+    the only one at home with Henry at the time.\nI had a good choice of parking
+    spaces though, the car park was empty when I got back. Usually Henry nabs my
+    parking spot before I get back home, thank god Joe just carpools with me. \nI
+    wouldn't be able to stand it if I had ANOTHER person fighting with me over my
+    parking spots...\nAnyway, I took a nap before driving off to grab Fred from the
+    airport. Must've been nice to take a holiday...\nBy the time we got back from
+    the airport it was 1AM. Fred saw the door to Henry's room ajar, so he pushed
+    it open and, well, the rest is history."
   speakerSprite: {fileID: 21300000, guid: 5c3c7430bb81efd4f96b9aa7ca15f7ba, type: 3}

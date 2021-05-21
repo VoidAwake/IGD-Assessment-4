@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6753f586e4b34f43b28b2ddc19805eb7, type: 3}
   m_Name: Security Footage 2
   m_EditorClassIdentifier: 
-  description: (3) Grabbed a clock from the office
+  description: Joe grabbed a clock from the office.

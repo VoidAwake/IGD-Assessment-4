@@ -10,19 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: (1)'s Whereabouts
+  m_Name: The Time
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - (1)'s Whereabouts
-  dialogue: '(1) had been on a holiday for 2 days and only got back the day after
-    the victim had died.
-
-    This is confirmed by (4).
-
-    Speaking of which (1)
-    and (4) were the ones who found the victim''s body.
-
-    If I recall they found
-    the body when they opened the door, what were they doing there?'
+  evidencePieces: []
+  dialogue: "[The clock reads: 1AM] \nIt's a fine hour to be up. Though I can't say
+    this is exactly a great way to start the day."
   speakerSprite: {fileID: 0}

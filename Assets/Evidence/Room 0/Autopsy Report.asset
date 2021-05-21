@@ -17,19 +17,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab3a8c7ac8ca4194487b4d4279d41ab6, type: 2}
   - {fileID: 11400000, guid: c86db3b93940ad5459f4b1f6571903e9, type: 2}
   - {fileID: 11400000, guid: 0c7c0f1fa90289e42907181c2051b6e5, type: 2}
-  dialogue: 'G''day, detective. The body''s already been taken away, but the autopsy
-    report is in. We''ve estimated the time of death to be 8:30PM last night.
-
-    Victim''s
-    body was covered in bloody bruises, and there was a rope lesion around his neck
-    from hanging from the ceiling.
-
-    Not likely to be a suicide, in my opinion.
-    The bruises look like he went down fighting.
-
-    That said, the cause of death
-    was determined to be strangulation.
-
-    The body was found at 1AM by the residents
-    of rooms one and four.'
+  dialogue: "G'day, detective. The body's already been taken away, but the autopsy
+    report is in. \nVictim's name is Henry. We've estimated the time of death to
+    be 8:30PM last night.\nVictim's body was covered in bloody bruises, and there
+    was a rope lesion around his neck from hanging from the ceiling.\nNot likely
+    to be a suicide, in my opinion. The bruises look like he went down fighting.\nThat
+    said, the cause of death was determined to be strangulation.\nThe body was found
+    at 1AM by the residents of rooms one and four.\nThe resident from room one- Fred
+    I believe, experienced quite a shock. Bumped his head real hard on the floor
+    when he passed out.\nI had him sent off to the clinic to get checked out."
   speakerSprite: {fileID: 21300000, guid: 6a9960187809fef4789455b3062d00b1, type: 3}

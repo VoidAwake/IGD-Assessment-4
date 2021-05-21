@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces:
   - {fileID: 11400000, guid: 0ee7f3a227280004db62f4d05b09296d, type: 2}
-  dialogue: '(4) drove me to work in the morning.
-
-    When I got home at around
-    10:30PM I saw (2) looking around in the hallway.
-
-    I then went to sleep so
-    i don''t know when (1) and (4) returned from the airport.'
+  dialogue: "It's great to meet you Detective, though I wish it were under better
+    circumstances... I can't say I was present for much of this when it all went
+    down, but I'll try to help as much as I can.\nRob- that'll be my friend in room
+    four, drove me to work in the morning. \nWhen I got home at around 10:30PM I
+    saw Tim up and about in the hallway, he looked quite startled upon seeing me.
+    Gave me a good scolding too...\nIt's been a long day at work, fell asleep soon
+    after so I don't know when Rob and Fred got back after Rob picked Fred up from
+    the airport."
   speakerSprite: {fileID: 21300000, guid: 9854552ad2d3baf48975987ba5cb8350, type: 3}

@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: Cars Outside
+  m_Name: Clock
   m_EditorClassIdentifier: 
-  evidencePieces:
-  - {fileID: 11400000, guid: 119bf6a7580e37348b467b740be92697, type: 2}
-  dialogue: 'I can see the apartment''s parking spaces from my window.
-
-    Those
-    two cars have been there since 10:30PM, that''s when I got woken up by Joe.'
-  speakerSprite: {fileID: 21300000, guid: 6ca0d37a39479fe4ab080b1776d147c9, type: 3}
+  evidencePieces: []
+  dialogue: '[The clock reads: 1:10AM]'
+  speakerSprite: {fileID: 0}
