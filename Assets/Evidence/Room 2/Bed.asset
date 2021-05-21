@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Bed
   m_EditorClassIdentifier: 
-  descriptions:
-  - State of (2)'s room
   evidencePieces:
   - {fileID: 11400000, guid: e6ede46ef7f05f3489d7479767cd48e0, type: 2}
-  dialogue: 'The bedsheets are
-    rumpled showing that the bed has been slept in.'
+  dialogue: The bedsheets are also rumpled, looks like Sleepy Tim had a nice nap
+    before the crime was called in.
   speakerSprite: {fileID: 0}

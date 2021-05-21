@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
-  m_Name: CoffeeTable
+  m_Script: {fileID: 11500000, guid: 6753f586e4b34f43b28b2ddc19805eb7, type: 3}
+  m_Name: Time
   m_EditorClassIdentifier: 
-  evidencePieces:
-  - {fileID: 11400000, guid: 5cb9b2293425f29499e2ae30af0d226a, type: 2}
-  dialogue: Tea for two? I guess Joe must come over for tea quite often.
-  speakerSprite: {fileID: 0}
+  description: Fred returned the night of the crime.

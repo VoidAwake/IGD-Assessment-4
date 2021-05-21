@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces:
   - {fileID: 11400000, guid: acd2a68b0f137034c937abb13170e86b, type: 2}
-  dialogue: 'The bedsheets on (3)''s bed are neatly arranged.
-
-    Perhaps he made
-    his bed sometime after waking up.'
+  dialogue: "This room decor is very, uh... \nvoid. \nJoe certainly wasn't lying
+    about not spending much time here. Even the bedsheets look barely touched.\nPerhaps
+    he made his bed sometime after waking up..?"
   speakerSprite: {fileID: 0}
