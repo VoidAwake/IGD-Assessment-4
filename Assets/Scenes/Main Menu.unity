@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4bfc2abb43e7c46982a2d9d81ab711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfScenes: 3
+  numberOfScenes: 5
   endingWall: {fileID: 650109960}
   endingSceneBuildIndex: 7
 --- !u!4 &893517293
