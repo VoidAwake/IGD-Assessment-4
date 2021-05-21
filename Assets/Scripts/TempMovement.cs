@@ -20,10 +20,12 @@ public class TempMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetInt("PrevLevel"));
         switch(PlayerPrefs.GetInt("PrevLevel"))
         {
             case 0:
-                transform.position = new Vector3(0.25f, -0.3f);
+                transform.position = new Vector3(-4.2f, 0f);
+                // transform.position.Scale(transform.localScale);
                 break;
             case 1:
                 transform.position = new Vector3(-3.25f, -0.3f);
@@ -44,7 +46,7 @@ public class TempMovement : MonoBehaviour
                 transform.position = new Vector3(3.2f, -0.3f);
                 break;
             default:
-                transform.position = new Vector3(-3, -0.3f);
+                transform.position = new Vector3(-4.2f, 0f);
                 break;
         }
         DM = FindObjectOfType<DialogueManager>();
