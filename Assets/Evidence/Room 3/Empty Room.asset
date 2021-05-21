@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Empty Room
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: "This room decor is very, uh... \nvoid. \nJoe certainly wasn't lying
-    about not spending much time here."
+  dialogue: 
   speakerSprite: {fileID: 0}
