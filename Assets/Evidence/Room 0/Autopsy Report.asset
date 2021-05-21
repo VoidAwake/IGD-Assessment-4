@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Autopsy Report
   m_EditorClassIdentifier: 
-  descriptions:
-  - The victim was covered in bloody bruises.
-  - The cause of death was strangulation.
-  - The time of death was 8:30PM.
-  - The body was reported to the police at 1:00AM
   evidencePieces:
   - {fileID: 11400000, guid: 9e0e3838d76dd9243917921da4889872, type: 2}
   - {fileID: 11400000, guid: ab3a8c7ac8ca4194487b4d4279d41ab6, type: 2}
@@ -37,4 +32,4 @@ MonoBehaviour:
 
     The body was found at 1AM by the residents
     of rooms one and four.'
-  speakerSprite: {fileID: 220038382452842621, guid: 50085c1114541654892aa336a805a593, type: 3}
+  speakerSprite: {fileID: 21300000, guid: 6a9960187809fef4789455b3062d00b1, type: 3}

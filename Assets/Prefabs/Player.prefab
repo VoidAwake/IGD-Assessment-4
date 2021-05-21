@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animation: {fileID: 656569036729276825}
-  MovementSpeed: 2
+  MovementSpeed: 1.6
   JumpForce: 3
   ClimbingSpeed: 0
   canMove: 0
