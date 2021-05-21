@@ -12,6 +12,14 @@ TagManager:
   - Fallen
   - Ladder
   - Door
+  - Rewind
+  - Clock
+  - Pause
+  - Exit
+  - Play
+  - Time
+  - N3
+  - music
   layers:
   - Default
   - TransparentFX
