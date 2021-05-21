@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
+  m_Name: LockPick Description
+  m_EditorClassIdentifier: 
+  evidencePieces: []
+  dialogue: To successfully unlock the lock, first, click on the Bronze pin with
+    [Left Mouse Button] to start, then use the mouse to change the angle of the pin
+    and use the [Lett Mouse Button] to attempt at unlocking the pin!
+  speakerSprite: {fileID: 0}
