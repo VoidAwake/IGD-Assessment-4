@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LockPick : MonoBehaviour
 {
+    [SerializeField] private int nextSceneBuildIndex;
+
     public Camera cam;
     public Transform innerLock;
     public Transform pickPosition;
@@ -75,6 +78,7 @@ public class LockPick : MonoBehaviour
 			{
                 //Does something once it unlocks.
                 Debug.Log("It Unlocks");
+                SceneManager.LoadScene(nextSceneBuildIndex);
                 movePick = true;
                 keyPressTime = 0;
 			}
