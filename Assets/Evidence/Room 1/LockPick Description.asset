@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: LockPick Description
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: To successfully unlock the lock, first, click on the Bronze pin with
-    [Left Mouse Button] to start, then use the mouse to change the angle of the pin
-    and use the [Lett Mouse Button] to attempt at unlocking the pin!
+  dialogue: 'To successfully unlock the lock, first, click on the Bronze pin with
+    [Left Mouse Button] to start.
+
+    Then use the mouse to change the angle of
+    the pin and click and hold the [Lett Mouse Button] to attempt at unlocking the
+    pin!'
   speakerSprite: {fileID: 0}
