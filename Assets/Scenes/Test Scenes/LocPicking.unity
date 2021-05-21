@@ -502,6 +502,10 @@ PrefabInstance:
       propertyPath: pickPosition
       value: 
       objectReference: {fileID: 967154719}
+    - target: {fileID: 2155986245305479109, guid: 8b92775d761369c47950f8000bcfe0d1, type: 3}
+      propertyPath: nextSceneBuildIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2155986246075443452, guid: 8b92775d761369c47950f8000bcfe0d1, type: 3}
       propertyPath: m_Name
       value: LockPick
