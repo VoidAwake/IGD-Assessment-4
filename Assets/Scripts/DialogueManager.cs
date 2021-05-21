@@ -102,7 +102,7 @@ public class DialogueManager : MonoBehaviour
 		{
 			textComponent.text += c;
 			SoundManager.PlaySound("Text");
-			yield return new WaitForSeconds(Time.deltaTime * textSpeed);
+			yield return new WaitForSeconds(textSpeed);
 		}
 		ContinueBtn.SetActive(true);
 		SoundManager.PlaySound("Button");

@@ -307,7 +307,7 @@ MonoBehaviour:
   ContinueBtn: {fileID: 9216288388519382765}
   speakerImage: {fileID: 9216288389493822058}
   defaultSpeakerSprite: {fileID: -5150704196045627465, guid: 60d6a376da5af104fb9aabb0c75785a9, type: 3}
-  textSpeed: 10
+  textSpeed: 0.01
   dialogActive: 0
   isInteracting: 0
   setInteracting: 0
