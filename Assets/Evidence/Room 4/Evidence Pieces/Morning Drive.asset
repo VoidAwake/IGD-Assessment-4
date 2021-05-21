@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6753f586e4b34f43b28b2ddc19805eb7, type: 3}
   m_Name: Morning Drive
   m_EditorClassIdentifier: 
-  description: Rob says he and Joe left the apartments at 10PM. Arrived at Joe's
+  description: Rob says he and Joe left the apartments at 10AM. Arrived at Joe's
     office at 12PM.
