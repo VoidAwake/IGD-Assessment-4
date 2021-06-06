@@ -52,6 +52,8 @@ public class ClickItem : MonoBehaviour
     }
 
     public void Play () {
-        Video.timeScale = 1;
+        if (Video.timeScale < 4) {
+            Video.timeScale += 1;
+        }
     }
 }
