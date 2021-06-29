@@ -11,36 +11,35 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public DialogueManager DM;
     public GameObject Player;
 
-    void Start()
+    void Awake()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            Debug.Log(PlayerPrefs.GetInt("PrevLevel"));
-            switch (PlayerPrefs.GetInt("PrevLevel"))
+            switch (PersistentData.PreviousScene)
             {
                 case 0:
-                    transform.position = new Vector3(-4.2f, 0f);
+                    transform.position = new Vector3(-4.2f, 0f, 0.1f);
                     break;
                 case 1:
-                    transform.position = new Vector3(-3.25f, -0.3f);
+                    transform.position = new Vector3(-3.25f, -0.3f, 0.1f);
                     break;
                 case 2:
-                    transform.position = new Vector3(-1.85f, -0.3f);
+                    transform.position = new Vector3(-1.85f, -0.3f, 0.1f);
                     break;
                 case 3:
-                    transform.position = new Vector3(-0.45f, -0.3f);
+                    transform.position = new Vector3(-0.45f, -0.3f, 0.1f);
                     break;
                 case 4:
-                    transform.position = new Vector3(1.05f, -0.3f);
+                    transform.position = new Vector3(1.05f, -0.3f, 0.1f);
                     break;
                 case 5:
-                    transform.position = new Vector3(2.45f, -0.3f);
+                    transform.position = new Vector3(2.45f, -0.3f, 0.1f);
                     break;
                 case 8:
-                    transform.position = new Vector3(3.2f, -0.3f);
+                    transform.position = new Vector3(3.2f, -0.3f, 0.1f);
                     break;
                 default:
-                    transform.position = new Vector3(-4.2f, 0f);
+                    transform.position = new Vector3(-4.2f, 0f, 0.1f);
                     break;
             }
         }

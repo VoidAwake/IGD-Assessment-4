@@ -7,13 +7,27 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 basePosition;
 
-    private void Start() {
+    private void Awake() {
         basePosition = transform.position;
     }
     
     private void Update()
     {
-        Vector3 newPos = new Vector3(target.position.x, basePosition.y, basePosition.z);
-        transform.position = Vector3.Lerp(transform.position, newPos, followSpeed * Time.deltaTime);
+        LerpToTarget();
+    }
+
+    public void MoveToTarget()
+    {
+        transform.position = TargetPosition();
+    }
+
+    private void LerpToTarget()
+    {
+        transform.position = Vector3.Lerp(transform.position, TargetPosition(), followSpeed * Time.deltaTime);
+    }
+
+    private Vector3 TargetPosition()
+    {
+        return new Vector3(target.position.x, basePosition.y, basePosition.z);
     }
 }

@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class VideoControls : MonoBehaviour
 {
     public void Exit () {
-        PlayerPrefs.SetInt("PrevLevel", SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(4);
+        Camera.main.GetComponent<SceneTransition>().ExitScene(4, false);
     }
 
     public void Rewind () {
