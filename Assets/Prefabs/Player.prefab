@@ -149,11 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animation: {fileID: 656569036729276825}
-  MovementSpeed: 1.6
-  JumpForce: 3
-  ClimbingSpeed: 0
-  canMove: 0
-  isLadder: 0
+  movementSpeed: 2
   isDoor: 0
   DM: {fileID: 0}
   Player: {fileID: 656569036729276896}
