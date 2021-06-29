@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Win
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: Correct! You win!
+  dialogue: Correct! You have found the culprits!
   speakerSprite: {fileID: 0}

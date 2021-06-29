@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces: []
   dialogue: 'At 1:00AM this morning a body was discovered in Room 0 of this building.
+    [Press ''F'' to continue.]
 
-    The
-    remaining occupants are all under suspicion.
+    The remaining occupants are all under suspicion.
 
-    Time to investigate each of
-    the suspects and sort the truth from the fiction.
+    Time
+    to investigate each of the suspects and sort the truth from the fiction.
 
-    Use [A] and [D] to move.
-    Use [F] to interact.'
+    Use
+    [A] and [D] to move. Use [F] to interact.'
   speakerSprite: {fileID: 0}

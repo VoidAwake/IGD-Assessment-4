@@ -671,6 +671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   evidence: {fileID: 0}
+  isInteracting: 0
 --- !u!1 &764167159
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368361336962039970, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
       propertyPath: m_Text
-      value: Neighbour 4
+      value: Rob
       objectReference: {fileID: 0}
     - target: {fileID: 368361337818601221, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
       propertyPath: m_Sprite
@@ -968,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368361336962039970, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
       propertyPath: m_Text
-      value: Neighbour 3
+      value: Joe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
@@ -1706,7 +1707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368361336962039970, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
       propertyPath: m_Text
-      value: Neighbour 1
+      value: Fred
       objectReference: {fileID: 0}
     - target: {fileID: 368361337818601221, guid: c2e52816ebcf3464895ca87e8a4f9c7b, type: 3}
       propertyPath: m_Sprite

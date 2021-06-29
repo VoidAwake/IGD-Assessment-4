@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: Clock
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: 'It looks like it was deliberately smashed and dropped a few times.
-
-    (4)
-    says he accidentally dropped the clock last night.
-
-    There are no fingerprints
-    on the clock.'
+  dialogue: It looks like it was smashed against something quite hard.
   speakerSprite: {fileID: 0}

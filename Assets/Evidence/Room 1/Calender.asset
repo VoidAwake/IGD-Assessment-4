@@ -14,15 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces:
   - {fileID: 11400000, guid: aaa697e55ca4476439949383c7029d3f, type: 2}
-  dialogue: 'Huh, the calender hasn''t been changed in awhile.
-
-    My sources say
-    Fred had been on vacation over the weekend. Stumbled right upon the body with
-    the resident of room four when he returned, apparently.
-
-    If I recall, Fred''s
-    prints were found on the doorknob of the victim''s room.
-
-    I wonder what business
-    they had opening Henry''s door...'
+  dialogue: "Huh, the calender hasn't been changed in awhile. Looks like Fred hasn't
+    been home for a few days.\nMy sources say Fred had been on vacation over the
+    weekend. \nStumbled right upon the body with the resident of room four when he
+    returned, apparently."
   speakerSprite: {fileID: 0}

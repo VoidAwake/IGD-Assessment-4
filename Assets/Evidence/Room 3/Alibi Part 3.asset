@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 3
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - (3)'s alibi
-  dialogue: (3) says that they were asleep when (1) and (4) found the body so they
-    can't say when exactly the two of them came back from the airport.
+  evidencePieces: []
+  dialogue: Joe says that they fell sleep after getting home.
   speakerSprite: {fileID: 0}

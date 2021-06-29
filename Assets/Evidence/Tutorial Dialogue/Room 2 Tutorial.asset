@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Room 2 Tutorial
   m_EditorClassIdentifier: 
-  descriptions: []
+  evidencePieces: []
   dialogue: 'Press [Q] to open your notebook and view your notes.
 
     You can click
-    on two notes to try to make a connection between them.'
+    on two notes to try to make a connection between them.
+
+    If the connection
+    is correct, a new clue will be added in the notes.'
   speakerSprite: {fileID: 0}

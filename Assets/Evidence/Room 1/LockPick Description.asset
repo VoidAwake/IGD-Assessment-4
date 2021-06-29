@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: LockPick Description
   m_EditorClassIdentifier: 
   evidencePieces: []
-  dialogue: 'To successfully unlock the lock, first, click on the Bronze pin with
-    [Left Mouse Button] to start.
+  dialogue: 'This must be Fred''s room. Since he''s not home, looks like I''ll have
+    to force my way in...
 
-    Then use the mouse to change the angle of
-    the pin and click and hold the [Lett Mouse Button] to attempt at unlocking the
-    pin!'
+    To successfully pick the lock, first, click on the
+    Bronze pin with [Left Mouse Button] to start.
+
+    Slowly move the lockpick and
+    click in small increments to find the position needed to open the lock.'
   speakerSprite: {fileID: 0}

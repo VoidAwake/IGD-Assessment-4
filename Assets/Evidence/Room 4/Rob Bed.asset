@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidencePieces:
   - {fileID: 11400000, guid: 0b1ba00562655f346b2bdf43314a1c38, type: 2}
-  dialogue: Poor sod, running back and forth all day. At least he got an uninterrupted
-    nap in.
+  dialogue: '[The bedsheets are rumpled.] At least Rob got an uninterrupted nap.'
   speakerSprite: {fileID: 0}

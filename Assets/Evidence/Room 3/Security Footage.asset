@@ -16,13 +16,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e2b0ae7d6a9ba214e9b77381d6c124fc, type: 2}
   - {fileID: 11400000, guid: 7d13c1b0a242d4244912407e8c84f041, type: 2}
   - {fileID: 11400000, guid: cde6a4cce076c874ebdf0454c7bb6162, type: 2}
-  dialogue: '(3) enters the building at 11:00AM.
+  dialogue: 'Joe enters the building at 11:00AM.
 
-    (3) grabs a clock from the
-    office
+    Joe leaves with a clock from
+    the office at 7:30PM.
 
-    (3) leaves the building at around 7:30PM.
-
-    Theres no reasonable
-    way for them to have made it home by 8:30PM.'
+    Theres no reasonable way for them to have made it
+    home by 8:30PM.'
   speakerSprite: {fileID: 0}

@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 3
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - (4)'s alibi
-  dialogue: '(1) noticed that the victim''s door was slightly ajar so they pushed
-    it open and found the victim''s body.
+  evidencePieces: []
+  dialogue: 'Fred found the victim''s body.
 
-    (4) says they called the police immedately
-    as (1) passed out.'
+    Rob says they called the police
+    immedately when Fred passed out.'
   speakerSprite: {fileID: 0}

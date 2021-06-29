@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: DirtyObject
   m_EditorClassIdentifier: 
-  evidencePieces:
-  - {fileID: 0}
+  evidencePieces: []
   dialogue: "Time to get hands on and see what's hiding under all of that grime...
-    \n[Click and hold with the mouse to wipe away at the object.]\n...\n...\nIt's
-    a clock- the broken face reads 8:30.\n[Exit to return to room.]"
+    \n[Click and hold with the mouse to wipe away at the object.]\n...\nIt's a clock-
+    the broken face reads 8:30.\n[Exit to return to room.]"
   speakerSprite: {fileID: 0}

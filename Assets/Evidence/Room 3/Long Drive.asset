@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Long Drive
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - Drive to (3)'s workplace
-  dialogue: The drive seems to take 2 hours give or take.
+  evidencePieces: []
+  dialogue: The drive to Joe's work seems to take 2 hours.
   speakerSprite: {fileID: 0}

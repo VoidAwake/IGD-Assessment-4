@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6753f586e4b34f43b28b2ddc19805eb7, type: 3}
   m_Name: (3)'s Wallet
   m_EditorClassIdentifier: 
-  description: (3) is able to drive
+  description: Joe can drive, but carpools with Rob to go to work.

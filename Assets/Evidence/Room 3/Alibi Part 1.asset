@@ -12,13 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421082a088e34e87884fa3dca624ce06, type: 3}
   m_Name: Alibi Part 1
   m_EditorClassIdentifier: 
-  description: 
-  descriptions:
-  - (3)'s alibi
-  dialogue: '(3) says that (4) drove them to work in the morning and that (4) usually
-    gets home at 7PM after work.
-
-    ...
-
-    How does (3) get home?'
+  evidencePieces: []
+  dialogue: Joe says that Rob drove them to work in the morning.
   speakerSprite: {fileID: 0}
