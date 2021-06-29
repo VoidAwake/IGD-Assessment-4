@@ -72,3 +72,6 @@ crashlytics-build.properties
 
 # JetBrains Rider IDE
 .idea
+
+# Unity Editor User Settings
+UserSettings/EditorUserSettings.asset
