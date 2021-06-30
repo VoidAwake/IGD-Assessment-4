@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -37,6 +35,8 @@ public class SceneTransition : MonoBehaviour
 
     private IEnumerator EnterSceneTransition()
     {
+        blockerPanel.enabled = true;
+        
         blockerPanel.color = Color.black;
         
         cameraFollow.MoveToTarget();
@@ -53,7 +53,7 @@ public class SceneTransition : MonoBehaviour
         
         while (Vector3.Angle(transform.forward, Vector3.forward) > 1)
         {
-            transform.RotateAround(rotationPoint, Vector3.up, sceneTransitionSpeed);
+            transform.RotateAround(rotationPoint, Vector3.up, sceneTransitionSpeed * Time.deltaTime);
 
             float ratio = Vector3.Angle(transform.forward, Vector3.forward) / 90 * blockerTiming - blockerTiming + 1;
             
@@ -63,7 +63,8 @@ public class SceneTransition : MonoBehaviour
         }
 
         blockerPanel.color = Color.clear;
-        
+
+        blockerPanel.enabled = false;
         transform.rotation = Quaternion.identity;
         
         cameraFollow.MoveToTarget();
@@ -74,6 +75,9 @@ public class SceneTransition : MonoBehaviour
     private IEnumerator ExitSceneTransition(int sceneBuildIndex)
     {
         cameraFollow.enabled = false;
+        
+        blockerPanel.enabled = true;
+        
             
         var rotationPoint = new Vector3(
             transform.position.x,
@@ -83,7 +87,7 @@ public class SceneTransition : MonoBehaviour
             
         while (Vector3.Angle(transform.forward, Vector3.forward) < 90)
         {
-            transform.RotateAround(rotationPoint, Vector3.up, sceneTransitionSpeed);
+            transform.RotateAround(rotationPoint, Vector3.up, sceneTransitionSpeed * Time.deltaTime);
             
             float ratio = (1 - Vector3.Angle(transform.forward, Vector3.forward) / 90) * 3;
             

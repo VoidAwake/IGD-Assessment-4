@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraFollow: {fileID: 4446038824772363158}
-  sceneTransitionSpeed: 0.4
+  sceneTransitionSpeed: 120
   blockerPanel: {fileID: 5559583743837384659}
   blockerTiming: 8
 --- !u!1 &8391911736800773274
