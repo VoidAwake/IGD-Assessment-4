@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public DialogueManager DM;
     public GameObject Player;
 
+    public bool canMove = true;
+
     void Awake()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
@@ -55,6 +57,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+            return;
+        
         if (!DM.isInteracting)
         {
             var movement = Input.GetAxisRaw("Horizontal") * movementSpeed * Time.deltaTime;

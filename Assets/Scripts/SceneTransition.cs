@@ -9,9 +9,13 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] private float sceneTransitionSpeed;
     [SerializeField] private Image blockerPanel;
     [SerializeField] private float blockerTiming;
+
+    private PlayerController playerController;
     
     void Start()
     {
+        playerController = FindObjectOfType<PlayerController>();
+        
         if (PersistentData.FirstLoad)
             PersistentData.FirstLoad = false;
         else
@@ -35,6 +39,8 @@ public class SceneTransition : MonoBehaviour
 
     private IEnumerator EnterSceneTransition()
     {
+        playerController.canMove = false;
+        
         blockerPanel.enabled = true;
         
         blockerPanel.color = Color.black;
@@ -65,11 +71,14 @@ public class SceneTransition : MonoBehaviour
         blockerPanel.color = Color.clear;
 
         blockerPanel.enabled = false;
+        
         transform.rotation = Quaternion.identity;
         
         cameraFollow.MoveToTarget();
         
         cameraFollow.enabled = true;
+        
+        playerController.canMove = true;
     }
 
     private IEnumerator ExitSceneTransition(int sceneBuildIndex)
@@ -78,6 +87,7 @@ public class SceneTransition : MonoBehaviour
         
         blockerPanel.enabled = true;
         
+        playerController.canMove = false;
             
         var rotationPoint = new Vector3(
             transform.position.x,
